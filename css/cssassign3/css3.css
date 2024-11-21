@@ -1,0 +1,19 @@
+.rect{
+    height: 300px;
+    width: 500px;
+    background-color: blue;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+
+}
+
+.cir{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    left: 250px;
+    top: 150px;
+}
