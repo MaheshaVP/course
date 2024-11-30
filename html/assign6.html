@@ -32,6 +32,9 @@
             background-color: white;
             color:black;
         }
+        .time{
+            background-color: white;
+        }
         footer{
             background-color: antiquewhite;
         }
@@ -119,23 +122,49 @@
 
         <u><b>Our batch timings</b></u>
 
-    <div style="text-align: center;">
+    <div class="time" style="text-align: center;">
 
         <table border="black" align="center">
-            <caption>Batch Timings</caption>
+            <caption>
+                <h1>Batch Timings</h1>
+                <input type="range" >
+            </caption>
+            
             <thead>
-             <th>day</th>
-             <th>mrng</th>
-             <th>afternoon</th>
-             <th>evening</th>
+                <th>course</th>
+                <th>Batch Timings(Morning) &nbsp;&nbsp; Batch Timings(Afternoon) </th>
+                <th>Batch Timings(Evening)</th>
             </thead>
-
-            <tbody>
-                <td>mon</td>
-                <td>eng</td>
-                <td>kan</td>
-                <td>sci</td>
-            </tbody>
+        
+            <tr style="text-align: center;">
+                <td>ITES</td>
+                <td>8.00 AM - 10.00AM &nbsp;&nbsp; 12.00PM - 2.00PM </td>
+                <td>6.00PM - 8.00PM</td>
+            </tr>
+        
+            <tr>
+                <td>JAVA</td>
+                <td>9.00 AM - 11.00AM &nbsp;&nbsp; 1.00PM - 3.00PM</td>
+                <td>7.00PM - 9.00PM</td>
+            </tr>
+        
+            <tr>
+                <td>WMA</td>
+                <td>8.30 AM - 10.30AM &nbsp;&nbsp; 12.30PM - 2.30PM</td>
+                <td>6.30PM - 8.30PM</td>
+            </tr>
+        
+            <tr>
+                <td>Data Analytics</td>
+                <td>10.00 AM - 12.00AM &nbsp;&nbsp; 2.00PM - 4.00PM</td>
+                <td>8.00PM - 10.00PM</td>
+            </tr>
+        
+            <tr>
+                <td>AIML</td>
+                <td>7.00 AM - 9.00AM &nbsp;&nbsp; 11.00AM - 1.00PM</td>
+                <td>5.00PM - 7.00PM</td>
+            </tr>
         </table>
     </div>
 
