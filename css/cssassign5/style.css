@@ -1,9 +1,90 @@
 body{
-    background: linear-gradient(blue,pink);
+    background: linear-gradient(blue,rgb(232, 17, 171),red);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px;
+    padding: 10px;
+    height: 100vh;
+}
+/* .cir1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(240, 233, 233);
+    border-radius: 100%;
+    position: relative;
+
+    
+}
+.cir2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(240, 233, 233);
+    border-radius: 100%;
+    position: relative;
+} */
+
+.container{
+    font-family: Arial, sans-serif;
+    width: 350px;
+    height: 450px;
+    background-color: black;
+    color: white;
+    text-align: start;
+    padding: 20px 20px 20px 20px;
+    border-radius: 1rem;
+    border: 0.3rem solid yellowgreen;
+    font-size: 20px;
+    padding-left: 50px;
 }
 
-.login {
-    background-color: yellow;
-    height: 500px;
-    width: 400px;
+.details{
+    font-size: medium;
+    line-height: 25px;
+}
+
+.name #name{
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+}
+
+.mail #gmail{
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+}
+
+.password #password{
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+}
+
+.p1{
+    color: yellow;
+    font-size: medium;
+    margin-top:-15px;
+}
+
+button{
+    margin-top: 10px;
+    background-color: black;
+    color: skyblue;
+    border: 2px solid ;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 300px;
+    height: 40px;
+}
+
+.p2{
+    color: red;
+    font-size:medium;
+    text-align: center;
+}
+a{
+    color: rgb(24, 226, 24);
+    margin-left: 150px;
 }
