@@ -1,0 +1,9 @@
+body{
+    background: linear-gradient(blue,pink);
+}
+
+.login {
+    background-color: yellow;
+    height: 500px;
+    width: 400px;
+}
