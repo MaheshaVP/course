@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(blue,rgb(232, 17, 171),red);
+    background-image: linear-gradient(to bottom right,blue,rgb(232, 17, 171),red);
     display:flex;
     align-items: center;
     justify-content: center;
@@ -36,6 +36,7 @@ body{
     border: 0.3rem solid yellowgreen;
     font-size: 20px;
     padding-left: 50px;
+    box-shadow: 3px 3px 20px yellow  ;
 }
 
 .details{
@@ -77,6 +78,7 @@ button{
     font-weight: 600;
     width: 300px;
     height: 40px;
+    box-shadow: 3px 3px 10px skyblue;
 }
 
 .p2{
