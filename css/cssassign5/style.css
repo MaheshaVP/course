@@ -28,7 +28,7 @@ body{
     font-family: Arial, sans-serif;
     width: 350px;
     height: 450px;
-    background-color: black;
+    background: black ;
     color: white;
     text-align: start;
     padding: 20px 20px 20px 20px;
@@ -36,7 +36,7 @@ body{
     border: 0.3rem solid yellowgreen;
     font-size: 20px;
     padding-left: 50px;
-    box-shadow: 3px 3px 20px yellow  ;
+    box-shadow: 0px 0px 20px yellow  ;
 }
 
 .details{
@@ -78,7 +78,7 @@ button{
     font-weight: 600;
     width: 300px;
     height: 40px;
-    box-shadow: 3px 3px 10px skyblue;
+    box-shadow: 0px 0px 20px skyblue;
 }
 
 .p2{
@@ -89,4 +89,8 @@ button{
 a{
     color: rgb(24, 226, 24);
     margin-left: 150px;
+}
+
+strong{
+    font-weight: 800;
 }
