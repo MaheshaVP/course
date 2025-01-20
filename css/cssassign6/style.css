@@ -4,9 +4,10 @@ body{
 }
 
 .container{
-    display: inline-flex;
+    display: flex;
     gap: 5px;
 }
+
 .quote{
     margin-left: 8%;
     margin-top: 10%;
@@ -18,11 +19,15 @@ h1{
     border: 2px solid black;
     border-color: rgb(113, 88, 221);
     border-radius: 5px;
-    width: 80%;
+    width: 40%;
     padding: 10px;
     font-size: 2.2rem;
     font-weight: 900;
     line-height: 40px;
+}
+
+h1:hover{
+    transform: rotate(180deg);
 }
 
 .quote p{
@@ -31,17 +36,33 @@ h1{
 }
 
 .grid{
+    margin-top: 60px;
     display: inline;
+    max-width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,1fr);
 
 }
 
 img{
     width: 250px;
     height: 100px;
-}
-.grid img:hover{
+    object-fit: cover;
     
+}
+
+.grid img:hover{
+    filter: grayscale(1);
+    transform: scale(1.5);
     box-shadow: 0 8px 16px rgb(238, 234, 234);
     animation: ease-out;
     animation-duration: 2s;
+}
+
+.grid img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
 }
