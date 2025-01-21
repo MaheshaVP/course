@@ -88,7 +88,7 @@ body{
     background-color: white;
     box-shadow:  0 0 20px #fff;
     cursor: pointer;
-    transform: scale(1.5);
+    transform: scale(1.2);
     
     /* transition-delay: 1s ; */
 }
