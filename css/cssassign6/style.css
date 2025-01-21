@@ -27,6 +27,16 @@ body{
 .heading{
     font-size: 2rem;
     text-align: center;
+    border: 2px solid rgb(171, 104, 115);
+    border-radius: 10px;
+    position: relative;
+    transition:1.5s ;
+}
+
+
+.heading:hover {
+    transform: rotate(180deg);
+    /* transition: 1s; */
 }
 
 .subheading{
@@ -51,6 +61,7 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    transition: 1s;
 }
 
 #box1{
@@ -78,4 +89,6 @@ body{
     box-shadow:  0 0 20px #fff;
     cursor: pointer;
     transform: scale(1.5);
+    
+    /* transition-delay: 1s ; */
 }
