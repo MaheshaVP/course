@@ -1,0 +1,83 @@
+body>div{
+    border: 1px solid white;
+    height: 88vh;
+}
+input{
+    width: 250px;
+    height: 40px;
+    border: 1px solid transparent;
+    background-color: black;
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 0.6em 1.2em;
+    font-weight: 600;
+   
+}
+
+input:hover{
+    border-color: blue;
+}
+
+.delete{
+    background-color: white;
+    color: black;
+    font-size: small;
+}
+
+.done{
+    background-color: white;
+    color: black;
+    font-size: small;
+}
+
+div>ol>li>span{
+    margin-right: 10px;
+    margin-left: -80px;
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+
+div>ol>button{
+    /* font-size: smaller; */
+    font-size: 30px;
+    padding: 2px 2px;
+}
+
+div>h1 {
+    margin-bottom:10px;
+    line-height: 1;
+    margin-bottom: 2px;
+    text-decoration: gray underline;
+
+}
+
+.finalbtn{
+    /* border: 1px solid white; */
+    font-size: small;
+    gap: 6px;
+    display: inline-block;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.in>button{
+    background-color: green;
+}
+
+div>ol>li{
+    margin: 5px 5px 5px 0px;
+}
+
+.bottom{
+    position:sticky;
+    margin-top: 0px;
+    width: 500px;
+}
+
+.tasks{
+    width: 500px;
+    height: 300px;
+    overflow: auto;
+      
+}
