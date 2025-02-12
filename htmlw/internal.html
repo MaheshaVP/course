@@ -1,16 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <style>
-body {background-color: powderblue;}
-h1   {color: blue;}
-p    {color: red;}
+/* h1   {color: blue;}
+p    {color: red;} */
 </style>
+
 </head>
 <body>
 
 <h1>This is a heading</h1>
 <p>This is a paragraph.</p>
+
+<iframe src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtWJoaXc3g9yvxxPczUot0JKUKRc8ELZhxHw&s" 
+width="200" height="200" title="iframe example" style="border: none; scrollbar-width: none;">
+</iframe>
+<br>
+
+<!-- iframe target link  -->
+ <iframe src="" 
+ name="target_a" 
+ style="width: 60%; 
+ height: 400px;
+ border: 2px solid ;"
+ title="UVCE">
+ </iframe>
+ <br>
+ <button>
+    <a href="https://uvce.ac.in/index.php" target="target_a"
+    style="text-decoration: none;
+    color: black;">
+    Click the Button 
+</a>
+</button>
+<p>the button shows the link page in the iframe tag</p>
+<br>
+
+
+<!-- simple javascript -->
+ <h2>show the time</h2>
+ <p id="time"></p>
+
+ <button type="button" 
+ onclick="document.getElementById('time').innerHTML=Date()">
+    Time</button>
+    <br>
+
+<p id="newText"></p>
+<br>
+
+<h1>Hello students</h1>
+<p id="awareness"></p>
+<button onclick="awareness()">Awareness</button>
+<br>
+<br>
+
+
+    <p id="demo"></p>    
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    
+    <p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+     
+
+
+<script >
+    document.getElementById('newText').innerHTML="To see the time please click on the <b>Time</b> button";
+
+    function awareness() {
+        document.getElementById('awareness').innerText = "Tomorrow come by 9 AM";
+        document.getElementById('awareness').style.color = "red";
+        document.getElementById('awareness').style.backgroundColor = "yellow";
+    }
+
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+
+</script>
+
 
 </body>
 </html>
