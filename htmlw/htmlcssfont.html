@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-p {
+/* p {
   border: 2px solid powderblue;
   padding: 30px;
   margin: 30px;
+} */
+
+table,th,td{
+  border: 2px solid black;
+  border-collapse: collapse;
+  border-radius: 15px;
 }
+
+th,td{
+  /* background-color: greenyellow; */
+  padding: 12px;
+}
+
+/* tr:nth-child(even){
+  background-color: aqua;
+}
+
+td:nth-child(even),td:nth-child(even){
+  background-color: aqua;
+} */
+
+
 </style>
+<title>html</title>
+<link rel="icon" type="image" href="https://static-00.iconduck.com/assets.00/html-5-icon-224x256-1b5ud2sy.png">
 </head>
 <body>
 
@@ -28,10 +53,111 @@ p {
 </a>
 <br>
 
-<p> <img src="https://t3.ftcdn.net/jpg/02/95/26/46/360_F_295264675_clwKZxogAhxLS9sD163Tgkz1WMHsq1RJ.jpg" alt="Smiley face" style="float:left;width:42px;height:42px;">
-    The image will float to the left of the text.</p>
-    <br>
+<p> <img src="https://t3.ftcdn.net/jpg/02/95/26/46/360_F_295264675_clwKZxogAhxLS9sD163Tgkz1WMHsq1RJ.jpg" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the left of the text.</p>
+<br>
+
+
+<table style="width: 100%;">
+  <caption>Details of Employees</caption>
+  <colgroup>
+    <col span="2" style="background-color: blueviolet;">
+  </colgroup>
+
+<tr>
+  <th style="width: 30%;">Name</th>
+  <th>age</th>
+  <th colspan="2">phone no</th>
+  <th>education</th>
+  <th rowspan="2" aria-rowspan="5">college</th>
+  <th>govt</th>
+  <th>private</th>
+</tr>
+
+<tr>
+  <td>Mahesh</td>
+  <td>21</td>
+  <td>1234567890</td>
+  <td>0987654321</td>
+  <td>BCA</td>
+  <td>yes</td>
+  <td> </td>
+</tr>
+
+<tr>
+  <td>chethan</td>
+  <td>21</td>
+  <td>1234567890</td>
+  <td>0987654321</td>
+  <td>BCA</td>
+  <td></td>
+  <td>yes</td>
+  <td></td>
+</tr>
+
+</table>
+
+<!-- unordered list -->
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<ul style="list-style-type:circle;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<ul style="list-style-type:square;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<ul style="list-style-type:none;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<ol type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<ol type="I">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<!-- inline element and block element -->
+<p>This is an inline span <span style="border: 1px solid black">Hello World</span> element inside a paragraph.</p>
+
+
+<p>Hello World</p>
+<div>Hello World</div>
+
+<h1>div element</h1>
+<div style="background-color:black;color:white;padding:20px;">
+  <h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+</div>
+
+<h1>span element</h1>
+<p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
 
 
 </body>
 </html>
+
