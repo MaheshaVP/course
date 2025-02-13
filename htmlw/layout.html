@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css layout</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            background-color: gray;
+            text-align: center;
+            font-size: 30px;
+            padding: 30px;
+            color: white;
+        }
+
+        nav{
+            float: left;
+            width: 30%;
+            background-color: rgb(215, 210, 210);
+            padding: 20px;
+            height: 300px;
+        }
+
+        nav ul{
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        nav ul a{
+            text-decoration: none;
+            color: rgb(31, 2, 249);
+        }
+
+        article{
+            float: left;
+            height: 300px;
+            background-color: rgb(161, 155, 155);
+            padding: 20px;
+            width: 70%;
+            /* overflow: auto; */
+        }
+
+        section::after{
+            content: " ";
+            display: table;
+            clear: both;
+        }
+
+        footer{
+            height: 100px;
+            background-color: gray;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* responsive */
+        @media(max-width:600px) {
+            nav,article{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        #start{
+            float: left;
+            background-color: cornflowerblue;
+            width: 20%;
+            height: 200px;
+        }
+
+        #middle{
+            float: left;
+            width: 60%;
+            background-color: green;
+            height: 200px;
+        }
+
+        #end{
+            float: left;
+            width: 20%;
+            background-color: yellow;
+            height: 200px;
+        }
+
+        @media(max-width:800px){
+            #start,#middle,#end{
+                width: 100%;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+    <h2>css float layout</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora iusto in doloribus eaque a fugit, sapiente distinctio! Error, praesentium!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ullam voluptatum perferendis, commodi cupiditate, quos assumenda illo nobis vero facilis rerum tempore rem impedit!</p>
+
+    <header>
+        <h1>cities</h1>
+    </header>
+
+    <section>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Main</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore pariatur amet obcaecati, veritatis autem officiis dolore cumque ducimus? Nisi, sequi.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod maiores corporis modi esse quia! Quae est aspernatur quod sit dolor! Explicabo et fugiat similique provident asperiores officia atque!</p>
+        </article>
+
+    </section>
+
+    <footer>
+        <p>footer</p>
+    </footer>
+
+    <br>
+
+    <h1>Image</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9SRRmhH4X5N2e4QalcoxVbzYsD44C-sQv-w&s" alt="image" style="width: 100%;">
+    <br><br>
+
+    <p id="start">first</p>
+    <p id="middle">second</p>
+    <p id="end">third</p>
+
+    <br><br>
+
+    
+
+
+</body>
+</html>
+
+

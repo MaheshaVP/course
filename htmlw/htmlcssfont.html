@@ -211,6 +211,11 @@ The image will float to the left of the text.</p>
 <h2 id="C4">Chapter 4</h2>
 <p>This chapter explains ba bla bla</p>
 
+<h1>Try it</h1>
+<p id="tryit">Hello</p>
+<button type="button" onclick="tryit()">try</button>
+<br>
+
 
 
 <script>
@@ -225,6 +230,10 @@ The image will float to the left of the text.</p>
 
    function changeHeader() {
     document.getElementById("myHeader").innerHTML="Hydrabadh";
+   }
+
+   function tryit() {
+    document.getElementById('tryit').innerText="Hello javascript";
    }
 
 </script>
