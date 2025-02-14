@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+
+    <form action="/">
+        <label for="fname">First Name : </label><br>
+        <input type="text" name="fname" id="fname" ><br>
+        <br>
+        <label for="lname">Last Name : </label><br>
+        <input type="text" name="lname" id="lname" ><br><br>
+
+        <input type="submit" value="submit">
+    </form>
+    <br><hr>
+
+    <!-- text -->
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+      <br>
+      <hr>
+
+      <!-- radio -->
+       <p>choose your favourite language</p>
+       <input type="radio" name="html" id="html">
+       <label for="html">HTML</label> <br>
+       <input type="radio" name="html" id="html">
+       <label for="html">CSS</label> <br>
+       <input type="radio" name="html" id="html">
+       <label for="html">JavaScript</label> <br>
+       <br> <hr>
+       
+       <!-- checkbox -->
+        <input type="checkbox" id="bike" name="Bike">
+        <label for="bike">I have Bike</label><br>
+        <input type="checkbox" id="car" name="Car">
+        <label for="car">I have car</label><br>
+        <input type="checkbox" id="boat" name="Boat">
+        <label for="boat">I have boat</label><br>
+        <br>  <hr>
+
+        <!-- submit -->
+    <input type="submit" value="submit">
+
+    <!-- target -->
+    <form action="/" target="_blank">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+      <br> <hr>
+
+      <!-- self -->
+      <form action="/action_page.php" target="_self">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+      <br>  <hr>
+
+      <h1>Elements</h1>
+
+      <!-- input and label -->
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br><br>
+      <input type="submit" value="Submit">
+      <br><hr><br>
+
+      <!-- select -->
+       <label for="ccar">Choose a car</label>
+       <select name="cars" id="ccar">
+        <option value="swift">Swift</option>
+        <option value="belano" selected>Belano</option>
+        <option value="i20">i20</option>
+        <option value="bmw">BMW</option>
+        <option value="audi">Audi</option>
+       </select><br>
+       <input type="submit">
+       <br><hr>
+
+       <!-- textarea -->
+        <textarea name="feedback" id="text" rows="15" cols="60">
+
+        </textarea><br>
+        <input type="submit"><br>
+        <hr>
+
+        <h2>Button</h2>
+        <button type="button" onclick="conclusion()">Submit
+        </button>
+        <br> <hr><hr>
+
+        <!-- fieldset -->
+        <h1>Field Set</h1>
+        <fieldset>
+            <legend>Details</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+          </form> 
+        </fieldset>
+        <br><br>
+
+        <!-- datalist -->
+         <input list="browsers" name="browser">
+         <datalist id="browsers">
+            <option value="Firefox">
+            <option value="chrome">   
+         </datalist>
+         <input type="submit">
+         <br><hr>
+
+        <!-- output -->
+         <form action="/" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range" id="a" name="a" value="50">
+            100 + 
+            <input type="number" id="b" name="b" value="80">
+            =
+            <output name="x" for="a b"></output>
+            <br><br>
+            <input type="submit">
+         </form>
+         <br><hr>
+
+        <p>input types</p>
+        <!-- text  -->
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+
+<!-- password -->
+<label for="pwd">Password:</label><br>
+<input type="password" id="pwd" name="pwd"><br>
+<br>
+
+<!-- submit -->
+<input type="submit" value="Submit">
+<br><br>
+
+<!-- reset -->
+<input type="reset" value="Reset">
+<br><br>
+
+<!-- radio -->
+<input type="radio" id="html" name="fav_language" value="HTML">
+<label for="html">HTML</label><br>
+<input type="radio" id="css" name="fav_language" value="CSS">
+<label for="css">CSS</label><br>
+<br>
+
+<!-- checkbox -->
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> I have a bike</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2"> I have a car</label>
+<br><br>
+
+<!-- button -->
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+<br><br>
+
+<!-- color -->
+<label for="favcolor">Select your favorite color:</label>
+<input type="color" id="favcolor" name="favcolor">
+<br><br>
+
+<!-- date -->
+<label for="birthday">Birthday:</label>
+<input type="date" id="birthday" name="birthday">
+<br><br>
+
+<!-- date min and max -->
+<label for="before">enter before 2000-01-30 : </label>
+<input type="date" id="before" name="before" max="2000-01-21"><br>
+
+<label for="after">enter before 2000-01-21 : </label>
+<input type="date" id="after" name="after" min="2000-01-21"><br>
+
+<input type="submit" value="submit">
+<br><br>
+
+<!-- local time -->
+<label for="birthday">Birthday date and time : </label>
+<input type="datetime-local" id="birthday" name="birthday"><br>
+<br>
+
+<!-- email -->
+<label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
+  <br><br>
+
+  <!-- image -->
+<input type="image" src="url" alt="submit" width="" height="">
+<br><br>
+
+<!-- file -->
+<label for="myfile">Select a file:</label>
+<input type="file" id="myfile" name="myfile">
+<br><br>
+
+<!-- month -->
+<label for="bdaymonth">Birthday (month and year):</label>
+<input type="month" id="bdaymonth" name="bdaymonth">
+<br><br>
+
+<!-- number -->
+<label for="quantity">Quantity (between 1 and 5):</label>
+<input type="number" id="quantity" name="quantity" min="1" max="5" value="4">
+<br><br>
+
+<!-- number limit -->
+<label for="quantity">Quantity:</label>
+<input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="80">
+<input type="submit" value="Submit">
+<br><br>
+
+<!-- range -->
+<label for="vol">Volume (between 0 and 50):</label>
+<input type="range" id="vol" name="vol" min="0" max="50">
+<br><br>
+
+<!-- search -->
+<label for="gsearch">Search Google:</label>
+<input type="search" id="gsearch" name="gsearch">
+<br><br>
+
+<!-- time -->
+<label for="appt">Select a time:</label>
+<input type="time" id="appt" name="appt"><br><br>
+
+<!-- telephone -->
+<label for="phone">Enter a phone number:</label><br>
+<input type="tel" id="phone" name="phone" placeholder="123-1234-123" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" required><br><br>
+
+<!-- url -->
+<label for="homepage">Add your homepage:</label>
+<input type="url" id="homepage" name="homepage"><br><br>
+
+<!-- week -->
+<label for="week">Select a week:</label>
+<input type="week" id="week" name="week"><br><br>
+
+<!-- readonly -->
+<label for="fname">First name:</label><br>
+<input type="text" id="fname" name="fname" value="John" readonly><br>
+<br>
+
+<!-- disabled -->
+<label for="fname">First name:</label><br>
+<input type="text" id="fname" name="fname" value="John" disabled><br>
+<br>
+
+<!-- size attribute -->
+<label for="fname">First name:</label><br>
+<input type="text" id="fname" name="fname" size="50"><br>
+<label for="pin">PIN:</label><br>
+<input type="text" id="pin" name="pin" size="4">
+<br><br>
+
+<!-- max-length -->
+ <label for="pin">PIN : </label><br>
+<input type="text" id="pin" name="pin" maxlength="4" size="4"><br><br>
+<input type="submit" value="Submit">
+<br><br>
+
+<!-- required -->
+<label for="username">Username:</label>
+  <input type="text" id="username" name="username" required autofocus>
+<br><br>
+
+<!-- placeholder -->
+<label for="username">Username:</label>
+  <input type="text" id="username" name="username" placeholder="Enter your name" required><br><br>  <hr>
+
+ <!-- novalidation  -->
+ <form action="/action_page.php">
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <input type="submit" value="Submit">
+    <input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
+  </form>
+  <br><hr>
+
+  
+
+
+
+
+        <script>
+            function conclusion() {
+                prompt("is there anything remain to submit");
+                alert("your form submitted")
+            }
+        </script>
+
+
+</body>
+</html>
