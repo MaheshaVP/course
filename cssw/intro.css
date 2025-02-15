@@ -1,0 +1,113 @@
+/* h1{
+    color: blue;
+}
+
+p{
+    color:rgb(16, 21, 5);
+} */
+
+    /* single line comment */
+
+    /* this is 
+    multiline 
+    comment */
+
+/* backgroun image  */
+    body{
+        background:#ffffff url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVRoLY3SSqU0HpNAP_-uwfp98RSCrxFqk5Gw&s") no-repeat right top ;
+        /* background-size: cover; */
+        /* background-repeat: no-repeat;
+        background-position: right top;
+        margin-right: 200px;
+        background-attachment:fixed; */
+    }
+
+div.second{
+    
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVRoLY3SSqU0HpNAP_-uwfp98RSCrxFqk5Gw&s);
+    background-size: cover;
+}
+
+.first{
+    background-color: green;
+    opacity: 0.1;
+}
+
+.second{
+    background-color: green;
+    opacity: 0.4;
+
+    background-color: rgba(0, 300, 0, 0.9); /*rgb values */
+}
+
+.third{
+    background-color: green;
+    opacity: 0.69;
+}
+
+div{
+    background-color: green;
+}
+
+
+/* borders */
+p.dotted {border-style: dotted; border-color: red;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid; border-color: green;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset; border-color: blue;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+/* border width */
+p.one {
+    border-style: solid;
+    border-width: 5px;
+  }
+  
+  p.two {
+    border-style: solid;
+    border-width: medium;
+  }
+  
+  p.three {
+    border-style: solid;
+    border-width: 2px;
+    border-color: red green blue yellow; /* multiple colors */
+  }
+  
+  p.four {
+    border-style: dotted;
+    border-width: thick;
+  }
+  
+  p.five {
+    border-style: double;
+    border-width: 15px;
+  }
+  
+  p.six {
+    border-style: double;
+    border-width: thick;
+  }
+
+  p {
+    /* border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid; */
+
+    border-style: dashed dotted ;
+  }
+
+  .shorth{
+    border: 5px solid red;
+    border-bottom:8px solid green ;
+    border-left: 4px solid ;
+    border-radius: 20px;
+    padding: 0px 20px;
+  }
