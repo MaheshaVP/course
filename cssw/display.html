@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="display.css">
+</head>
+<body>
+
+    <p>Display a list of links as a horizontal menu:</p>
+<div class="inline">
+<ul>
+  <li><a href="/html/default.asp" target="_blank">HTML</a></li>
+  <li><a href="/css/default.asp" target="_blank">CSS</a></li>
+  <li><a href="/js/default.asp" target="_blank">JavaScript</a></li>
+</ul>
+</div>
+
+    <h1>Display span elements as block elements</h1>
+<div class="block">
+<span>A display property with</span> <span>a value of "block" results in</span> <span>a line break between each span elements.</span>
+</div>
+
+<h1 class="hidden">This is a hidden heading</h1>
+
+<div class="ex1">This div element has width: 500px;</div>
+<br>
+
+<div class="ex2">This div element has max-width: 500px;</div>
+
+
+<h1>Static</h1>
+<div class="static">
+    This div element has position: static;
+    </div>
+
+    <h1>Relative</h1>
+    <div class="relative">
+        This div element has position: relative;
+    </div>
+
+    <h1>fixed</h1>
+    <div class="fixed">
+        This div element has position: fixed;
+    </div>
+    
+    <div class="repo">
+    <h1>Absolute</h1>
+    <div class="relative">This div element has position: relative;
+        <div class="absolute">This div element has position: absolute;</div>
+    </div>
+</div>
+<br><br>
+
+<div class="sticky">I am sticky!</div>
+
+<div style="padding-bottom:2000px">
+  <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+  <p>Scroll back up to remove the stickyness.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+ 
+</div>
+<br><br>
+
+<h2>Image Text</h2>
+<p>Add some text to an image in the top left corner:</p>
+
+<div class="container">
+  <img src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="Cinque Terre" width="100" height="300">
+  <div class="topleft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias dolore officia natus. Repudiandae quia recusandae saepe, odit libero odio nemo. </div>
+</div>
+<br><br>
+
+<h1>Z index</h1>
+
+<div class="zindex">
+    <h1>This is a heading</h1>
+<img src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="Cinque Terre" width="100" height="300"">
+<p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+</div>
+<br><br>
+
+<div class="container">
+    <div class="black-box">Black box</div>
+    <div class="gray-box">Gray box</div>
+    <div class="green-box">Green box</div>
+</div>
+<br><br>
+
+<h2>CSS Overflow</h2>
+
+<p>The overflow property controls what happens to content that is too big to fit into an area.</p>
+
+<div id="overflowTest">This text is really long and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</div>
+<br><br>
+
+<div class="floatleft">
+<h2>Float Right</h2>
+
+<p>In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image.</p>
+
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf6zoRR_FPG7f2knECoYTgOuETejMYPg71vg&s" alt="eye image" style="width:150px;height:150px;margin-left:15px;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+</div>
+<br><br>
+
+<div class="floatright">
+    <h2>Float Right</h2>
+    
+    <p>In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image.</p>
+    
+    <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf6zoRR_FPG7f2knECoYTgOuETejMYPg71vg&s" alt="eye image" style="width:150px;height:150px;margin-left:15px;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+    </div>
+    <br><br>
+
+    <h2>Float Next To Each Other</h2>
+
+<p>In this example, the three divs will float next to each other.</p>
+
+<div class="div1">Div 1</div>
+<div class="div2">Div 2</div>
+<div class="div3">Div 3</div>
+<br><br>
+
+<div class="clearfix">
+    <img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJrT7MI9fsrc6mWRBJBwhrf4vwTL7S5B8CzQ&s" alt="Pineapple" width="170" height="100">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+  </div>
+  <br><br>
+
+  <h2 style="clear:right">With New Modern Clearfix</h2>
+<p>Add the clearfix hack to the containing element, to fix this problem:</p>
+
+<div class="clearfix">
+  <img class="img2" src="pineapple.jpg" alt="Pineapple" width="170" height="170">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+</div>
+<br><br>
+
+</body>
+</html>
