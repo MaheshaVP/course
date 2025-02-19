@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+        }
+
+        /* style the header */
+        .header{
+            background-color: lightgray;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* style topnav */
+        .topnav{
+            overflow: hidden;
+            background-color: black;
+            /* padding: 15px; */
+        }
+
+        .topnav a{
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 15px;
+          text-decoration: none;
+        }
+
+        .topnav a:hover{
+            background-color: #ddd;
+            color: black;
+        }
+
+        #abt{
+            float: right;
+        }
+
+       /* style content */
+       .column{
+        float: left;
+        /* width: 33%; */
+        padding: 10px;
+       }
+
+       .column.side{
+        width: 25%;
+        /* background-color: greenyellow; */
+       }
+
+       .column.middle{
+        width: 50%;
+        /* background-color: greenyellow; */
+       }
+
+       .main::after{
+        content: "";
+        display: table;
+        clear: both;
+       }
+
+       /* content responsive */
+       @media screen and (max-width:600px){
+        .column.side,.column.middle,.topnav a{
+            width: 100%;
+        }
+       }
+
+       @media screen and (max-width:900px){
+        #abt{
+            float: left;
+        }
+       }
+
+       /* style footer */
+       .footer{
+        background-color: lightgray;
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+       }
+
+    </style>
+</head>
+<body>
+    
+    <!-- header -->
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+
+    <!-- navbar -->
+    <div class="topnav">
+        <a href="#">Home</a>
+        <a href="#">Content</a>
+        <a href="#">Contact</a>
+        <a href="#" id="abt">About</a>
+    </div>
+
+    <!-- content -->
+    <div class="main">
+        <div class="column side">
+            <h1>Columa1</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque molestias amet ipsa ipsam quaerat atque blanditiis dolores culpa asperiores? Enim molestias ad aperiam fugiat! Deleniti aspernatur eos quidem autem consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repellat cum facere optio expedita sint, ut doloribus perferendis magni nisi.</p>
+        </div>
+
+        <div class="column middle">
+            <h1>Columa2</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque molestias amet ipsa ipsam quaerat atque blanditiis dolores culpa asperiores? Enim molestias ad aperiam fugiat! Deleniti aspernatur eos quidem autem consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, necessitatibus? Amet quas quia nostrum dignissimos modi eaque aperiam sit perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam vero tempore nam eligendi cum fuga, veniam minus labore suscipit incidunt fugit illum doloribus excepturi, illo nihil asperiores. Quos ducimus possimus tenetur nihil accusamus laudantium, numquam, nobis praesentium ipsa quam atque cupiditate dolore quis commodi quia facilis, quae quo officia error!</p>
+        </div>
+
+        <div class="column side">
+            <h1>Columa3</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque molestias amet ipsa ipsam quaerat atque blanditiis dolores culpa asperiores? Enim molestias ad aperiam fugiat! Deleniti aspernatur eos quidem autem consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aliquid sint quod, dolorem illo magnam expedita ducimus tempora dignissimos at.</p>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+
+</body>
+</html>
+

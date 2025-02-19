@@ -66,6 +66,31 @@
             }
         }
 
+        #counter{
+            h1 {
+  counter-reset: subsection;
+}
+            h1::before {
+  counter-increment: section;
+  content: "Section " counter(section) ". ";
+}
+
+h2::before {
+  counter-increment: subsection;
+  content: counter(section) "." counter(subsection) " ";
+}
+        }
+
+        .button{
+            background-color: gray !important;
+            color: white;
+            padding: 10px;
+            border: 1px solid black !important;
+        }
+        #mydiv a{
+            background-color: yellow ;
+            color: lightgray !important;
+        }
 
     </style>
 
@@ -125,5 +150,24 @@
 
         </form>
     </div>
+
+    <br>
+
+    <p>Standard button: <a class="button" href="default.asp">CSS Tutorial</a></p>
+
+<div id="mydiv">
+<p>A link text inside myDiv: <a href="/html/">HTML Tutorial</a></p>
+<p>A link button inside myDiv: <a href="/html/" class="button">HTML Tutorial</a></p>
+</div>
+
+<br>
+
+    <div id="counter">
+    <h1>Programming Tutorials</h1>
+    <h2>Python</h2>
+    <h2>Java</h2>
+    <h2>C++</h2>
+    </div>
+
 </body>
 </html>
