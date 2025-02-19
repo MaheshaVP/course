@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        div{
+            border-radius: 5px;
+            background-color: #ccc;
+            padding: 20px;
+        }
+        input[type=text], select {
+            width: 100%;
+            margin: 10px;
+            padding: 15px;
+            border: 3px solid gray;
+            border-radius: 5px;
+            box-sizing: border-box;
+            display: inline-block;
+            transition: 0.5s;
+            outline: none;
+        }
+        input[type=text], select:focus{
+            border: 3px solid black;
+        }
+        input[type=submit]{
+            width: 100%;
+            padding: 15px;
+            background-color: green;
+            margin: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        input[type=submit]:hover{
+            background-color: rgb(43, 148, 43);
+        }
+        input[class=search]{
+            box-sizing: border-box;
+            width: 200px;
+            background-color: white;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+            font-size: 16px;
+            background-image: url(https://img.icons8.com/ios7/512/search.png);
+            background-size: 20px;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 10px 20px 12px 35px;
+            transition: width 0.4s ease-in-out;
+        }
+        input[class=search]:focus{
+            width: 100%;
+        }
+        textarea{
+            width: 100%;
+            height: 100px;
+            padding: 15px;
+            font-size: 16px;
+            resize: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            background-color: #f8f8f8;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Using CSS to style an HTML Form</h3>
+
+<div>
+  <form action="#">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<form>
+    <input type="text" name="search" placeholder="Search.." class="search">
+  </form>
+
+  <h2>Styling textarea</h2>
+
+<p><strong>Tip:</strong> Use the resize property to prevent textareas from being resized (disable the "grabber" in the bottom right corner):</p>
+
+<form>
+  <textarea>Some text...</textarea>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+/* body{
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+
+li{
+    display: inline;
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li:first-child{
+    background-color: green;
+    border-right: none;
+}
+
+li a{
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.active{
+    background-color: green;
+}
+
+li a:hover:not(.active){
+    background-color: #111;
+} */
+
+
+
+/* sticky nav bar  */
+/* 
+ul{
+    font-size: 28px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: gray;
+    overflow: hidden;
+    position: -webkit-sticky;
+    top: 0;
+    border: 1px solid gray;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  
+    text-decoration: none;
+    padding: 15px;
+}
+
+li .active{
+    background-color: green;
+}
+
+li.right{
+    float: right;
+}
+
+li a:hover:not(.active){
+    background-color: rgb(53, 50, 50);
+}
+
+@media(max-width:500px){
+    ul li {
+        width: 100%;
+    }
+}
+ */
+
+
+ /* responsive */
+body{
+    margin: 0;
+}
+
+ ul.topnav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+ }
+
+
+ ul.topnav li {
+    float: left;
+ }
+
+ ul.topnav li a{
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+ }
+
+ ul.topnav li a.active{
+    background-color: green;
+ }
+
+ ul.topnav li.right{
+    float:right;
+ }
+
+ ul.topnav li a:hover:not(.active){
+    background-color: #111;
+ }
+
+ @media screen and (max-width:600px) {
+    ul.topnav li.right, 
+    ul.topnav li{  
+        float: none;
+    }
+/* 
+    li a{
+        width: 100%;
+    } */
+     
+ }

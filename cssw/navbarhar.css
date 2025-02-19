@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+}
+
+ul.sidenav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    overflow: auto;
+    position: fixed;
+    background-color:wheat;
+    height: 100%;
+    top: 0;
+}
+
+ul.sidenav li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+
+ul.sidenav li a:hover{
+    background-color: black;
+    color: white;
+}
+
+ul.sidenav li a.active{
+    color: white;
+    background-color: green;
+}
+
+div.content{
+    margin-left: 25%;
+    padding: 10px;
+    height: 1000px;
+}
+
+@media screen and (max-width:900px){
+    ul.sidenav{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.sidenav li a{
+        float: left;
+        padding: 15px;
+    }
+    div.content{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:500px){
+    ul.sidenav li a{
+        text-align: center;
+        float: none;
+    }
+    ul.sidenav li a:hover{
+        background-color: black;
+        color: white;
+    }
+}
