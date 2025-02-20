@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#rcorners1{
+    background-color: green;
+    padding: 20px;
+    border-radius: 25px;
+    width: 250px;
+    height: 150px;
+}
+#rcorners2{
+    border: 2px solid green;
+    width: 250px;
+    height: 150px;
+    border-radius: 25px;
+    padding: 10px;
+}
+#rcorners3{
+    border: 2px solid;
+    width: 250px;
+    height: 150px;
+    border-radius: 25px;
+    padding: 20px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ718nztPNJfCbDJjZG8fOkejBnBAeQw5eAUA&s);
+    background-position: left top;
+    background-repeat: repeat;
+}
+
+#rcorners5{
+    width: 200px;
+    height: 150px;
+    background-color: green;
+    border-radius: 15px 50px 30px 5px;
+}
+#rcorners6{
+    width: 200px;
+    height: 150px;
+    background-color: green;
+    border-radius: 15px 50px 10px;
+}
+#rcorners7{
+    width: 200px;
+    height: 150px;
+    background-color: green;
+    border-radius: 15px 50px;
+}
+#rcorners8{
+    width: 200px;
+    height: 150px;
+    background-color: green;
+    border-radius: 15px;
+}
+#rcorners9{
+    width: 200px;
+    height: 150px;
+    background-color: green;
+    border-radius: 50px / 15px;
+}
+#rcorners10{
+    width: 200px;
+    height: 150px;
+    background-color: green;
+    border-radius: 15px/50px;
+}
+#rcorners11{
+    width: 200px;
+    height: 150px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+#example1{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9YYh5Fk1u9VsWWr1MhkyQeOzeNbtnnMO96g&s),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHxuPLt9Tl22nT6ftc67n56CfpEse65zuU3Q&s);
+    background-position: right bottom , bottom right;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+}
+
+#bgsize1{
+    border: 2px solid;
+    margin: 10px;
+    padding: 15px;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRW76Uoole_PZ9xzWCzmKYnTa_YUyJTGOmHg&s) no-repeat center fixed;
+    background-size: cover;
+}
+
+#bgsize2{
+    height: 150px;
+    width: 200px;
+    border: 2px solid;
+    background: url(https://pixlr.com/images/generator/how-to-generate.webp) no-repeat left;
+    margin: 10px;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: scroll;
+}
+
+#heroimg{
+    position: relative;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHzEdDvmNfd7Wg_pPnH4BjliCStyUcO2N2fQ&shttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHzEdDvmNfd7Wg_pPnH4BjliCStyUcO2N2fQ&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-origin: content-box;
+}
+
+#herotext{
+    border: 5px solid blue;
+    padding: 20px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 30%;
+    left: 30%;
+    right: 30%;
+    background-origin: content-box;
+}
+
+#example3{
+    border: 6px dotted black;
+    padding: 30px;
+    background-color: yellow;
+    /* background-clip: border-box; */
+    background-clip: content-box;
+    /* background-clip: padding-box; */
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>The border-radius Property</h1>
+
+<p>Rounded corners for an element with a specified background color:</p>
+<p id="rcorners1">Rounded corners!</p>
+<p>Rounded corners for an element with a border:</p>
+<p id="rcorners2">Rounded corners!</p>
+<p>Rounded corners for an element with a background image:</p>
+<p id="rcorners3">Rounded corners!</p>
+
+<h1>The border-radius Property</h1>
+
+<p>Four values - border-radius: 15px 50px 30px 5px:</p>
+<p id="rcorners5"></p>
+
+<p>Three values - border-radius: 15px 50px 30px:</p>
+<p id="rcorners6"></p>
+
+<p>Two values - border-radius: 15px 50px:</p>
+<p id="rcorners7"></p>
+
+<p>One value - border-radius: 15px:</p>
+<p id="rcorners8"></p>
+
+<h1>The border-radius Property</h1>
+
+<p>Elliptical border - border-radius: 50px / 15px:</p>
+<p id="rcorners9"></p>
+
+<p>Elliptical border - border-radius: 15px / 50px:</p>
+<p id="rcorners10"></p>
+
+<p>Ellipse border - border-radius: 50%:</p>
+<p id="rcorners11"></p>
+
+<h1>Multiple Backgrounds</h1>
+<p>The following div element has two background images:</p>
+
+<div id="example1">
+  <h1>Lorem Ipsum Dolor</h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+<br><br>
+
+<div id="bgsize1">
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum obcaecati possimus magnam voluptas labore laudantium. Praesentium culpa quia exercitationem quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis deserunt rem accusantium voluptatem adipisci dolore eveniet cupiditate praesentium ratione obcaecati! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, doloremque! Excepturi repudiandae non ipsa explicabo quidem architecto, magni reiciendis commodi?
+    </p>
+</div>
+<div id="bgsize2">
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, laborum eaque. Illum perspiciatis, assumenda blanditiis sapiente placeat eligendi id hic. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim expedita animi natus, sit vero eius cupiditate rem molestiae repellat ut accusamus et ipsa cum saepe, deleniti consequuntur dicta nam illum corporis magnam earum ad! Quidem, rerum!
+    </p>
+</div>
+<br><br>
+
+<div id="heroimg">
+    <div id="herotext">
+        <p style="font-size: 20px;">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ratione totam est! Quasi accusamus impedit dolore perspiciatis enim nemo iure.
+        </p>
+    </div>
+</div>
+<br><br>
+
+<p>background-clip: content-box:</p>
+<div id="example3">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+<br><br>
+
+    
+
+</body>
+</html>
+
+
