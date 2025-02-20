@@ -89,7 +89,96 @@
             margin: 10px;
         }
 
+        #conic #grad1{
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+            background-image: repeating-conic-gradient(red 10%, yellow 20%);
+            border-radius: 50%;
+        }
 
+        #conic #grad2{
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+            background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+            border-radius: 50%;
+        }
+
+        #shad1{
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 5px red;
+        }
+
+        #shad2{
+            color: white;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        #shad3{
+            text-shadow: 1px 1px 5px #FF0000,1px 1px 5px #000FF0;
+        }
+
+        #shad4{
+            color: white;
+            text-shadow: 1px 1px 2px black,0 0 25px blue,0 0 5px darkblue;
+        }
+
+        #box1{
+            background-color: tomato;
+            height: 120px;
+            width: 200px;
+            box-shadow: 10px 10px lightgreen;
+        }
+
+        #box2{
+            background-color: tomato;
+            height: 120px;
+            width: 200px;
+            box-shadow: 10px 10px 5px gray;
+            /* box-shadow: 10px 10px 5px 9px gray; */
+        }
+
+        #box3{
+            background-color: tomato;
+            height: 120px;
+            width: 200px;
+            box-shadow: 10px 10px 5px lightblue inset;   
+        }
+
+        #textsh{
+            margin-top: 20px;
+            width: 250px;
+            box-shadow: 0 0 18px black;
+            text-align: center;
+        }
+
+        #textsh #header{
+            color: white;
+            background-color: green;
+            padding: 10px;
+            font-size: 30px;
+        }
+
+        #textsh #content{
+            padding: 10px;
+        }
+
+        #imgsh{
+            margin: 40px;
+            width: 250px;
+            box-shadow: 0 0 18px black;
+            text-align: center;
+        }
+
+        #imgsh img{
+            width: 80%;
+            padding: 10px;
+        }
+
+        #imgsh #content{
+            padding: 10px;
+        }
 
     </style>
 </head>
@@ -110,6 +199,34 @@
         <div id="grad2"></div>
         <div id="grad3"></div>
     </div>
+
+    <div id="conic">
+        <div id="grad1"></div>
+        <div id="grad2"></div>
+    </div>
     
+    <h1 id="shad1">Text-shadow effect!</h1>
+    <h1 id="shad2">Ratnadeep</h1>
+    <h1 id="shad3">More</h1>
+    <h1 id="shad4">Shadow Four</h1>
+
+    <div id="box">
+        <div id="box1"><p>A element with a box-shadow</p></div>
+        <div id="box2"><p>A element with a box-shadow</p></div>
+
+        <div id="box3"><p>A element with a box-shadow</p></div>
+
+        <div id="textsh">
+            <div id="header"><h1>1</h1></div>
+            <div id="content">Feb 21 , 2025</div>
+        </div>
+    </div>
+
+    <div id="imgsh">
+        <div id="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK36qucT00eDFVlLfCJ6yJEZygvibcVdRWQ2etgSZH5DiNwMX-s8-FemIh3nL0DS_x_cU&usqp=CAU" alt=""></div>
+        <div id="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At nesciunt nihil cumque eligendi amet, voluptatem repellat. Sunt voluptatibus quaerat quos.</div>
+    </div>
+
+
 </body>
 </html>
