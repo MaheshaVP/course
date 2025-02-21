@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transform</title>
+    <style>
+        #scalex{
+            div{
+                width: 200px;
+                padding: 15px;
+                height: 100px;
+                background-color: aqua;
+                margin: 30px;
+            }
+
+            #mydiv{
+                transform: rotateX(150deg);
+            }
+        }
+
+        #scaley{
+            div{
+                width: 200px;
+                height: 100px;
+                padding: 15px;
+                background-color: aqua;
+                margin: 30px;
+            }
+
+            #mydiv{
+                transform: rotateY(150deg);
+            }
+        }
+
+        #scalez{
+            div{
+                width: 200px;
+                height: 100px;
+                padding: 15px;
+                background-color: aqua;
+                margin: 30px;
+            }
+
+            #mydiv{
+                transform: rotateZ(90deg);
+            }
+        }
+
+        #transi{
+            div{
+                width: 100px;
+                height: 100px;
+                background-color: green;
+                transition: width 2s , height 4s;
+            }
+            div:hover{
+                width: 300px;
+                height: 200px;
+            }
+        }
+
+        #timing{
+            div{
+                margin: 10px;
+                width: 150px;
+                height: 100px;
+                background-color: red;
+                border: 2px solid;
+                transition: width 1s;
+                /* transition-delay: 0.6s; */
+            }
+
+            #div1{transition-timing-function: linear;}
+            #div2{transition-timing-function: ease;}
+            #div3{transition-timing-function: ease-in;}
+            #div4{transition-timing-function: ease-in-out;}
+            #div5{transition-timing-function: ease-out;}
+
+            div:hover{
+                width: 250px;
+            }
+        }
+
+        #formtion{
+            margin: 100px;
+            width: 100px;
+            height: 100px;
+            border: 2px solid;
+            background-color: yellow;
+            transition: width 2s , height 2s , transform 2s;
+        }
+
+        #formtion:hover{
+            width: 200px;
+            height: 200px;
+            transform: rotate(180deg);
+        }
+
+        #tr{
+            width: 150px;
+            height: 100px;
+            border: 2px solid;
+            background-color: blueviolet;
+            /* transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 0.6s; */
+            transition: width 2s linear 0.8s;
+        }
+
+        #tr:hover{
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="scalex">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, of sunt!</div>
+        <div id="mydiv">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, repellendus.</div>
+    </div>
+
+    <div id="scaley">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, of sunt!</div>
+        <div id="mydiv">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, repellendus.</div>
+    </div>
+    
+    <div id="scalez">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, of sunt!</div>
+        <div id="mydiv">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, repellendus.</div>
+    </div>
+    <br><br>
+
+    <div id="transi">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quis!</div>
+    </div>
+
+    <div id="timing">
+        <div id="div1">linear</div><br>
+        <div id="div2">ease</div><br>
+        <div id="div3">ease-in</div><br>
+        <div id="div4">ease-out</div><br>
+        <div id="div5">ease-in-out</div><br>
+    </div>
+
+    <div id="formtion"></div>
+
+    <div id="tr"></div>
+</body>
+</html>
