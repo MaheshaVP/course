@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        
+            #animation #box{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                border: 2px solid;
+                animation-name: exam;
+                animation-duration: 3s;
+            }
+            @keyframes exam{
+                /* from{background-color : red;}
+                to{background-color:green;} */
+
+                0%{background-color: red;}
+                25%{background-color: green;}
+                50%{background-color: blue;}
+                75%{background-color: yellow;}
+            }
+
+            #animat div{
+                width: 100px;
+                height: 100px;
+                background-color: yellow;
+                border: 2px solid grey;
+                position: relative;
+                /* animation-name: ex1;
+                animation-duration: 4s;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate; */
+                animation: ex1 4s linear 1s infinite alternate;
+            }
+            @keyframes ex1{
+                0%{background-color: yellow; left: 0px; top: 0px;}
+                25%{background-color: green; left: 100px; top: 0px;}
+                50%{background-color: blue; left: 100px; top: 100px;}
+                75%{background-color: pink; left: 0px; top: 100px;}
+                100%{background-color: rebeccapurple; left: 0px; top: 0px;}
+
+            }
+
+
+div.div{
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s;
+  animation-fill-mode: forwards;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+
+
+    
+    </style>
+</head>
+<body>
+    
+    <div id="animation">
+        <h1>Animation</h1>
+        <div id="box"></div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, obcaecati!</p>
+    </div>
+
+    <div id="animat">
+        <h1>animation</h1>
+        <div></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, enim.</p>
+    </div>
+
+    <div id="div1" class="div">linear</div>
+    <div id="div2" class="div">ease</div>
+    <div id="div3" class="div">ease-in</div>
+    <div id="div4" class="div">ease-out</div>
+    <div id="div5" class="div">ease-in-out</div>
+</body>
+</html>
