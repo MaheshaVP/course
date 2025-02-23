@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+
+        .brdrrd{
+            border-radius: 50%;
+        }
+
+        #border img{
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 6px;
+        }
+        #border img:hover{
+            box-shadow: 0 0 20px 5px blue;
+        }
+
+        #responsive{
+            width: 600px;
+            border: 2px solid;
+            height: 200px;
+        }
+        #responsive img{
+            width: 100%;
+        }
+
+        #img2{
+
+            #polo{
+                width: 80%;
+                border: 2px solid;
+                box-shadow: 0 4px 10px gray, 0 5px 15px gray;
+                margin-bottom: 25px;
+                background-color: white;
+            }
+            #polo img{
+                opacity: 0.8;
+            }
+
+           #polo img:hover{
+                opacity: 1;
+            }
+
+            #container{
+                text-align: center;
+                padding: 10px;
+            }
+
+        }
+
+        
+
+            .container{
+                position: relative;
+            }
+
+            .trans img{
+                opacity: 0.4;
+                width: 100%;
+                height: auto;
+            }
+
+            .center{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .topleft{
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .topright{
+                position: absolute;
+                top: 5px;
+                left: 80%;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .bottomleft{
+                position: absolute;
+                top: 80%;
+                left: 5%;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .bottomright{
+                position: absolute;
+                top: 86%;
+                left: 80%;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .container1{
+                position: relative;
+                width: 50%;
+            }
+
+            .container1 img{
+                width: 100%;
+                opacity: 1;
+                height: auto;
+                display: block;
+                transition: 0.5s ease;
+                backface-visibility: hidden;
+            }
+            
+            .text1{
+                background-color: gray;
+                color: white;
+                font-size: 18px;
+                padding: 16px 32px;
+            }
+
+            .middle{
+                transition: 0.5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+            }
+
+            .container1:hover .image1{
+                opacity: 0.3;
+            }
+
+            .container1:hover .middle{
+                opacity: 1;
+            }
+
+            .scale img:hover{
+                transform: scaleX(-1);
+            }
+
+            /* Responsive Gallary */
+            div.gallary{
+                border: 1px solid;
+            }
+
+            div.gallary:hover{
+                border: 2px solid;
+            }
+
+            div.gallary img{
+                width: 100%;
+                height: 200px;
+            }
+
+            div.desc{
+                color: white;
+                background-color: blue;
+                text-align: center;
+                padding: 15px;
+            }
+
+            *{
+                box-sizing: border-box;
+            }
+
+            .responsive{
+                float: left;
+                padding: 0px 5px;
+                width: 24%;
+            }
+
+            @media only screen and (max-width:900px) {
+                .responsive{
+                    width: 49%;
+                    margin: 6px 0;
+                }
+            }
+
+            @media only screen and (max-width:600px) {
+                .responsive{
+                    width: 98%;
+                }
+            }
+
+            .clear::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <h1>rounded images</h1>
+    <p>Use the border-radius property to create circled images:</p>
+    <img src="https://static.toiimg.com/thumb/msid-112662104,width-1280,height-720,resizemode-4/112662104.jpg" alt="Krishna Image" width="300px" height="200px" class="brdrrd">
+    <br><br>
+
+    <div id="border">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRXxfn1j1vKFy8yJeBGl2AS6Dcah-lKgHofg&s" alt="girl img" width="300" height="200">
+    </div>
+    <br>
+
+    <div id="responsive">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMDjFabmdJqtLjab-A4NDTNsl-WABK2pG1oA&s" alt="taj mahal" width="500" height="200">
+    </div>
+    <br><br>
+
+    <div id="img2">
+
+        <div id="polo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3KLsKw0jLKi6EOWlMs2QnOvqlopxW-8i54w&s" alt="flower" width="100%" height="250px">
+            <div id="container">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </div>
+
+        <div id="polo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbxdrJVEzP-dw5YhrN__P_0Wvq5c8msup33w&s" alt="img" width="100%" height="250px">
+            <div id="container">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </div>
+        <br><br>   
+    </div>
+
+
+    <div class="trans">
+
+        <div class="container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRYMJbiv5GmNIWRvNdVkQU65RXzBD1GexX3Q&s" alt="img" width="400px" height="250px">
+            <p class="center">Centered Text</p>
+        </div>
+    
+    <br>
+    
+        <div class="container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRYMJbiv5GmNIWRvNdVkQU65RXzBD1GexX3Q&s" alt="img" width="400px" height="250px">
+            <p class="topleft">Top Left</p>
+        </div>
+    
+    <br>
+    
+        <div class="container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRYMJbiv5GmNIWRvNdVkQU65RXzBD1GexX3Q&s" alt="img" width="400px" height="250px">
+            <p class="topright">Right Top</p>
+        </div>
+    
+    <br>
+    
+        <div class="container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRYMJbiv5GmNIWRvNdVkQU65RXzBD1GexX3Q&s" alt="img" width="400px" height="250px">
+            <p class="bottomleft">Bottom Left</p>
+        </div>
+
+    <br>
+    
+        <div class="container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRYMJbiv5GmNIWRvNdVkQU65RXzBD1GexX3Q&s" alt="img" width="400px" height="250px">
+            <p class="bottomright">Bottom Right</p>
+        </div>
+
+    </div>
+        
+
+        <br><br>
+
+        <div class="container1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Wjd-Cak78mooEfHTx64D7xhFtgBMZRFiiQ&s" alt="img" class="image1" width="100%">
+            <div class="middle">
+                <div class="text1">Click me!</div>
+            </div>
+        </div>
+    
+
+        <div class="scale">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrpZEneLh1WL_0kpeQEvbvHipkPx22W2hKMg&s" alt="img" width="50%" height="300px" style="padding: 10px; margin: 20px;">
+        </div>
+        <br><br>
+
+        <h2>Responsive Image Gallery</h2>
+
+        <h4>Resize the browser window to see the effect.</h4>
+
+        <div class="responsive">
+            <div class="gallary">
+                <a target="_blank" href="https://cdn.pixabay.com/photo/2019/05/28/19/43/leaves-4235968_1280.jpg">
+                    <img src="https://cdn.pixabay.com/photo/2019/05/28/19/43/leaves-4235968_1280.jpg" alt="image" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallary">
+                <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXyjce2EEaw6ba18JjVFctNDTKFCQHYDOLkA&s">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXyjce2EEaw6ba18JjVFctNDTKFCQHYDOLkA&s" alt="image" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallary">
+                <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Vk1HryMP7mCiZedQnx6QHsbalILCEafZNg&s">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Vk1HryMP7mCiZedQnx6QHsbalILCEafZNg&s" alt="image" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallary">
+                <a target="_blank" href="https://images.pexels.com/photos/2541239/pexels-photo-2541239.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    <img src="https://images.pexels.com/photos/2541239/pexels-photo-2541239.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="image" width="600" height="400">
+                </a>
+                <div class="desc">Add a description of the image</div>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div style="padding:6px;">
+            <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+            <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+        </div>
+
+
+</body>
+</html>

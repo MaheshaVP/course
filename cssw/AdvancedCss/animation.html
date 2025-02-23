@@ -68,6 +68,47 @@ div.div{
   to {left: 300px;}
 }
 
+.tooltip{
+    left: 20px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 135px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 6px;
+
+    position: absolute;
+    z-index: 1;
+    /* top: -5px; */
+    /* left: 105%; */
+    /* bottom: 100%; */
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+}
+
 
     
     </style>
@@ -91,5 +132,16 @@ div.div{
     <div id="div3" class="div">ease-in</div>
     <div id="div4" class="div">ease-out</div>
     <div id="div5" class="div">ease-in-out</div>
+
+    <br><br>
+
+
+    <h1>Tooltip</h1>
+    <div class="tooltip">move cursor
+        <span class="tooltiptext">Hover Over me</span>
+    </div>
+    <br><br>
+
+
 </body>
 </html>
