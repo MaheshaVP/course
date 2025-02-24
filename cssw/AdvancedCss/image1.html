@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Centering</title>
+    <style>
+        .image{
+            margin: auto;
+            border-radius: 20px;
+            display: block;
+            width: 50%;
+        }
+
+        .image1{
+            display: flex;
+            justify-content: center;
+        }
+
+        .image1 img{
+            width: 50%;
+            margin-top: 60px;
+            border-radius: 20px;
+        }
+
+        .image2{
+            border: 2px solid;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image2 img{
+            width: 50%;
+            height: 50%;
+            border-radius: 10px;
+        }
+
+        #image3 img{
+            width: 500px;
+            height: 300px;
+            filter: blur(2px);
+        }
+
+        .cont img{
+            width: 400px;
+            height: 240px;
+            /* filter: contrast(50%); */
+            /* filter: grayscale(1); */
+            /* filter: invert(0.2); */
+            /* filter: opacity(50%); */
+            /* filter: saturate(0); */
+        }
+
+        .circl{
+            border: 2px solid aquamarine;
+            padding: 10px;
+        }
+
+        .circl img{
+            float: left;
+            clip-path: circle(40%);
+        }
+
+        .cover img{
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            /* object-fit: contain; */
+            /* object-fit: fill; */
+            /* object-fit: none; */
+            /* object-fit: scale-down; */
+            object-position: 45% 30%;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h2>Using Margin</h2>
+
+<p>To center an image horizontally, set margin to auto, convert it into a block element, and define a width:</p>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu6CxUjMfQerSYVycJJCYgNb6fEqNcfDT5gg&s" alt="image" class="image">
+
+<div class="image1">
+    <h1>Using Flex</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Bpw-6g9Ag96_d5_c2Ejq4BkG8-_l6Fb8Aw&s" alt="Rose">
+</div>
+
+<div class="image2">
+    <!-- <h1>using justify and align</h1> -->
+    <img src="https://cdn.pixabay.com/photo/2016/10/15/19/40/different-nationalities-1743396_640.jpg" alt="justify">
+</div>
+<br>
+
+<div id="image3">
+    <img src="https://th.bing.com/th/id/OIG3.80EN2JPNx7kp5VqoB5kz" alt="Effect">
+</div>
+
+<div class="cont">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVNN58XFDLxdqtwwWRSE924NjtuSryXFGxjg&s" alt="cont">
+</div>
+<br><br>
+
+
+<div class="circl">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLj09ZpqA-TNAbYBJltnpNrVV9-YE2MD9w_w&s" alt="circl">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum cumque ea officia atque mollitia et ipsam amet veniam tempora deserunt vero, dolore nesciunt neque, vel in facilis sint harum nam?
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo consequatur impedit ipsa nam id officia velit nobis sit. Necessitatibus hic ratione qui soluta. Voluptatibus ipsam ea unde. Eveniet magnam commodi reprehenderit et, quasi deserunt temporibus quis, quia placeat quo cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur hic quaerat facilis vel ipsam voluptatibus blanditiis enim nemo a, vero aliquid possimus repellat neque assumenda consequuntur exercitationem quisquam voluptatem ipsa!</p>
+</div>
+<br><br>
+
+<div class="cover">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1H5Itbt6aDSLTZR9YvpD8IltBhyQptZmiNw&s" alt="cover" width="300" height="200">
+</div>
+<br><br>
+
+<div style="width: 600px; height: 300px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREoRGyXmHy_6aIgXYqWHdOT3KjfmnuSyxypw&s" alt="imge" style="float: left; width: 50%; height: 100%; object-fit: cover;">
+    <img src="https://www.shutterstock.com/image-photo/traveler-woman-arms-raised-triumph-260nw-2457990309.jpg" alt="imgf" style="float: left; width: 50%; height: 100%;object-fit: cover;">
+</div>
+<br><br>
+
+
+
+</body>
+</html>
