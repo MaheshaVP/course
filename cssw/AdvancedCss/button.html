@@ -64,6 +64,25 @@
             cursor: not-allowed;
         }
 
+        .pagination{
+            margin-top: 250px;
+            display: inline-block;
+        }
+
+        .pagination a{
+            text-align: center;
+            text-decoration: none;
+            float: left;
+            padding: 20px;
+            color: black;
+        }
+
+        .pagination a.active{
+            background-color: green;
+            color: white;
+        }
+
+
     </style>
 </head>
 <body>
@@ -79,7 +98,20 @@
         <button class="buttond btn4">green</button>
         <button class="buttond btn5">gray</button>
     </div>
+<br><br>
 
+
+    <h2>Pagination</h2>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
 
 </body>
 </html>
