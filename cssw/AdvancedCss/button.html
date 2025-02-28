@@ -64,6 +64,10 @@
             cursor: not-allowed;
         }
 
+        .center{
+            text-align: center;
+        }
+
         .pagination{
             margin-top: 250px;
             display: inline-block;
@@ -73,8 +77,22 @@
             text-align: center;
             text-decoration: none;
             float: left;
-            padding: 20px;
+            padding: 15px 20px;
             color: black;
+            font-size: 24px;
+            transition: background-color .3s;
+            border: 1px solid black;
+            margin: 0px 4px;
+        }
+
+        .pagination a:first-child{
+            border-top-left-radius: 5px ;
+            border-bottom-left-radius: 5px;
+        }
+
+        .pagination a:last-child{
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
         }
 
         .pagination a.active{
@@ -82,6 +100,75 @@
             color: white;
         }
 
+        .pagination a:hover:not(.active){
+            background-color: gray;
+            border-radius: 5px;
+        }
+
+        #navnxt{
+            display: inline-block;
+        }
+
+        #navnxt a{
+            float: left;
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1px solid black;
+        }
+
+
+
+        #navlinks{
+            display: inline-block;
+        }
+
+        #navlinks a{
+            float: left;
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1px solid black;
+        }
+
+        #navlinks a:first-child{
+            background-color: green;
+            color: white;
+            border-color: green;
+        }
+
+        #navnxt a:hover,#navlinks a:hover:not(:first-child){
+            background-color: gray;
+        }
+
+        .newspaper{
+            column-count: 3;
+            column-gap: 40px;
+            /* column-rule-style: solid ;
+            column-rule-width: 1px;
+            column-rule-color: lightblue; */
+            column-rule: 1px solid lightblue;
+            column-width: 100px;
+
+            column-span: all;
+        }
+
+        .userifce{
+            width: 300px;
+            border: 2px solid black;
+            padding: 15px;
+            resize: horizontal;
+            overflow: auto;
+        }
+
+        #outline{
+            border: 2px solid black;
+            margin: 10px;
+            outline: 5px solid red;
+            outline-offset: 5px;
+        }
 
     </style>
 </head>
@@ -100,7 +187,7 @@
     </div>
 <br><br>
 
-
+<div class="center">
     <h2>Pagination</h2>
     <div class="pagination">
         <a href="#">&laquo;</a>
@@ -112,6 +199,41 @@
         <a href="#">6</a>
         <a href="#">&raquo;</a>
     </div>
+</div>
+<br><br>
+
+<h1>next/previous buttons</h1>
+<div id="navnxt">
+    <a href="#">&laquo;</a>
+    <a href="">&raquo;</a>
+</div>
+
+
+<h1>navigation page</h1>
+<div id="navlinks">
+    <a href="#">Link1</a>
+    <a href="#">Link2</a>
+    <a href="#">Link3</a>
+    <a href="#">Link4</a>
+</div>
+
+<h1>Create Multiple columns</h1>
+<div class="newspaper">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, doloremque, alias incidunt quasi repellendus assumenda ut veritatis sed error quisquam expedita tenetur facilis temporibus labore cumque! Ab, harum ea, facilis laborum natus quaerat eveniet sit distinctio quae iusto nemo, quo ex possimus architecto. Quaerat sequi aut similique rem omnis laboriosam dolor. Voluptatum magni voluptates necessitatibus doloribus voluptas veniam accusamus voluptatem, delectus, odit tenetur vero unde deleniti quae fugiat alias commodi minima et molestiae obcaecati dolorem facere est magnam? Enim quam atque doloremque quaerat sequi? Eos maxime, libero, aut minima fugiat veritatis labore, pariatur eius temporibus nobis beatae aperiam doloribus fugit qui possimus officiis incidunt obcaecati? Voluptatibus magnam quasi neque ea magni quae, incidunt, tempore quas hic distinctio ratione, inventore maiores sapiente quibusdam dolores impedit. Harum, neque reprehenderit quas quam fuga ipsa deleniti amet eius et est odit voluptatum modi, consequuntur quaerat. Rem impedit, est esse enim reiciendis eius, cupiditate qui aspernatur nobis maiores veritatis! Aspernatur tenetur tempore harum repellendus in temporibus iusto vero non animi voluptas ipsa quas nemo corporis rerum laudantium, sint aut ducimus doloremque quos fuga ut. 
+</div>
+
+<h1>user interface</h1>
+<div class="userifce">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, esse?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+</div>
+
+<h1>outline offset</h1>
+    <div id="outline">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit aliquam asperiores, nobis doloremque, cum, fuga consequatur id temporibus alias commodi non quidem! Officiis maxime consequuntur error repudiandae omnis nobis veritatis animi corporis iusto doloremque, debitis ipsam odio assumenda dolores pariatur eaque asperiores numquam ex blanditiis fugiat quis vitae. Earum, excepturi!
+    </div>
+    <br><br>
+
 
 </body>
 </html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box</title>
+    <style>
+
+        #bx1{
+            border: 2px solid mediumseagreen;
+            height: 100px;
+            width: 300px;
+        }
+
+        #bx2{
+            border: 2px solid maroon;
+            margin: 20px;
+            width: 300px;
+            height: 100px;
+            padding: 30px;
+        }
+
+        #media{
+            background-color: green;
+            color: white;
+            padding: 10px;
+        }
+
+        @media screen and (min-width:400px) and (max-width:1000px) {
+            #media{
+                background-color: aqua;
+                color: gray;
+            }
+        }
+        
+        .wrapper{
+            overflow: auto;
+        }
+
+        #main{
+            margin-left: 6px;
+        }
+
+        #leftsidebar{
+            float: none;
+            width: auto;
+        }
+
+        #menulist{
+            margin: 0;
+            padding: 0;
+        }
+
+        .menuitem{
+            background-color: aqua;
+            border: 1px solid black;
+            border-radius: 5px;
+            list-style-type: none;
+            padding: 2px;
+            margin: 4px;
+        }
+
+        @media screen and (min-width:460px) {
+            #leftsidebar{
+                width: 245px;
+                float: left;
+            }
+            #main{
+                margin-left: 250px;
+            }
+        }
+        
+
+        #mob{
+            background-color: red;
+        }
+
+        @media(max-width:500px) {
+            div#mob{
+                background-color: yellow;
+            }
+        }
+
+        @media(max-width:890px) {
+            #mob{
+                background-color: green;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div id="bx1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi consequatur aperiam odio amet fugit fuga exercitationem. Laborum corporis ab provident!
+    </div>
+
+    <div id="bx2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolore autem temporibus ullam sapiente, deleniti soluta accusantium distinctio.
+    </div>
+
+    <div id="media">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis nisi vel natus repellendus numquam accusamus maiores fuga aliquid molestias consequatur.
+    </div>
+    <br><br>
+
+    <div class="wrapper">
+        <div id="leftsidebar">
+          <ul id="menulist">
+            <li class="menuitem">Menu-item 1</li>
+            <li class="menuitem">Menu-item 2</li>
+            <li class="menuitem">Menu-item 3</li>
+            <li class="menuitem">Menu-item 4</li>
+            <li class="menuitem">Menu-item 5</li>
+          </ul>
+        </div>
+        
+        <div id="main">
+          <h1>Resize the browser window to see the effect!</h1>
+          <p>This example shows a menu that will float to the left of the page if the viewport is 480 pixels wide or wider. If the viewport is less than 480 pixels, the menu will be on top of the content.</p>
+        </div>
+      </div>
+      <br>
+
+      <div id="mob">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam a laboriosam nisi labore sed ullam magnam voluptatem. Est, error quo!
+        </div>
+    
+</body>
+</html>
