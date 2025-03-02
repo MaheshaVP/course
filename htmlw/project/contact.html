@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - LTS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the little Taco Shop</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home Page</a>
+                </li>
+                <li>
+                    <a href="index.html#about">About <abbr title="The little taco shop">LTS</abbr></a>
+                </li>
+                <li>
+                    <a href="index.html#menu"> Our menu</a>
+                </li>
+                <li>
+                    <a href="hours.html">Store Hours</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <figure>
+        <img src="./images/tacoand drinks.jpg" alt="Tacos and a drink" title="We love tacos" width="400" height="267">
+        <figcaption>Little Taco shop tacos</figcaption>
+    </figure>
+    <hr>
+
+    <main>
+        <!-- our content  -->
+         <section>
+         <h2>Our contact form</h2>
+
+         <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>Send us a message</legend>
+
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="your name" required>
+                </p>
+                <p>
+                    <label for="mail">Email:</label>
+                    <input type="email" name="mail" id="mail" placeholder="your mail" required>
+                </p>
+                <p>
+                    <label for="feedback">Your Message :</label><br>
+                    <textarea name="feedback" id="feedback" placeholder="enter your feedback" rows="10" cols="30"></textarea>
+                </p>
+            </fieldset>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            
+         </form>
+        </section>
+        <section>
+            <h2>our location</h2>
+            <address>
+                    555 college,<br>
+                    tumkur <br>
+                    karnataka-560001 <br>
+            </address>
+            <br><br>
+            phone: <a href="tel:12345678">123-456-789</a>
+        </section>
+
+    </main>
+    <hr>
+
+    <footer>
+        <p>Copyright &copy; The little taco shop</p>
+    </footer>
+    
+
+
+
+</body>
+</html>
