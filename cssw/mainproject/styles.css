@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sriracha&display=swap');
+
+
+/* All */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* header */
+header{
+    background-color: tomato;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+
+header .heading img{
+    text-align: center;
+}
+
+header h1{
+    font-size: 30px;
+    margin: 30px 0 0 15px;
+    text-align: center;
+    font-family: "Merienda", cursive;
+}
+
+header p{
+    margin-top: 60px;
+    margin-left: -90px;
+}
+
+
+
+/* navbar */
+nav.navbarmain{
+    list-style-type: none;
+    margin: 0;    
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav.navbarmain li{
+    float: left;
+}
+
+nav.navbarmain li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+nav.navbarmain li a:hover{
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+}
+
+/* main */
+
+
+
+.carousel-item img{
+    width: 100%;
+    height: 600px;
+}
+
+
+
+
+
+
+/*footer*/
+footer{
+    background-color: black;
+    color: white;
+    
+}
+
+footer .footer-links{
+    float: left;
+    width: 50%;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+footer .footer-links li{
+    list-style-type: none;
+    margin: 10px;
+}
+
+footer .footer-links li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer .footer-links li a:hover{
+    color: tomato;
+    font-weight: 800px;
+}
+
+footer .add{
+    float: right;
+    width: 50%;
+    padding: 5px;
+    margin-top: -25px;
+    text-align: center;
+}
+
+footer .add a{
+    text-decoration: none;
+    color: white;
+}
+
+footer .clearfix{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+footer .social-icons{
+    width: 100%;
+    margin: 5px;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social-icons li {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+footer .social-icons li i{
+    cursor: pointer;
+    font-size: 20px;
+    opacity: 1;
+}
+
+footer .social-icons li i:hover{
+    color:chocolate;
+    text-decoration: none;
+    text-shadow: 0 0  20px white;
+    cursor: pointer;
+    /* font-size: 22px; */
+}
+
+footer .copyright{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
