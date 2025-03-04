@@ -22,9 +22,11 @@ header{
 
 header .heading img{
     text-align: center;
+    cursor: pointer;
 }
 
 header h1{
+    cursor: pointer;
     font-size: 30px;
     margin: 30px 0 0 15px;
     text-align: center;
@@ -41,13 +43,14 @@ header p{
 /* navbar */
 nav.navbarmain{
     list-style-type: none;
-    margin: 0;    
+    margin: 0 0 40px 0;    
     padding: 0;
     overflow: hidden;
     background-color: #333;
 }
 
 nav.navbarmain li{
+    margin: 0 0 0 20px ;
     float: left;
 }
 
@@ -66,17 +69,223 @@ nav.navbarmain li a:hover{
     font-weight: 900;
 }
 
+.dropdown1 {
+    display: inline-block;
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    min-width: 80px;
+}
+
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+
+ 
+
 /* main */
 
+div#search{
+    /* float: right; */
+    text-align: center;
+    margin: -15px 10px 0 0;
+    padding: 5px;
+}
+
+div#search input{
+    border-radius: 8px;
+    padding: 1px 10px;
+}
+
+div#search input#subbtn{
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    padding: 1px 8px;
+}
+
+#top h6{
+    float: right;
+    margin: 5px 10px 8px 20px;
+}
 
 
+/* images */
 .carousel-item img{
     width: 100%;
-    height: 600px;
+    height: 550px;
+    margin: 10px 50px 10px 10px;
+}
+
+
+/* about content */
+#about1>h3{
+    font-family: "Sriracha", cursive;
+    margin: 15px 0 0 30px;
+    text-decoration: double underline;
+}
+
+#about1>p{
+    margin: 15px;
+    padding: 15px;
+    width: 55%;
+    background-color: rgb(21, 227, 227);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#about1>p#first{
+    float: left;
+    margin-bottom: -5px;
+}
+
+#about1>p#second{
+    float: right;
+}
+
+#clrab{
+    clear: both;
+}
+
+
+/* home */
+#home{
+    font-family: Geneva, Verdana, sans-serif;
+    margin: 20px;
+    padding: 10px;
+}
+
+#home h5{
+    text-align: center;
+}
+
+#home>button{
+    float: right;
+    margin: 0 150px 0 0;
+    padding: 0 20px;
+    height: 40px;
+    background-color: rgb(117, 234, 99);
+    font-weight: 600;
+    font-size: large;
+}
+
+
+/* cources */
+#cources{
+    margin: 6px 8px;
+}
+
+#cources h1{
+    font-family: "Sriracha", cursive;
+    color:red;
+    text-align: center;
+}
+
+#cources div{
+    width: 45%;
+    height: 200px;
+    float: left;
+    border: 2px solid black;
+    margin: 5px 10px;
+    /* margin-left: 60px; */
+    padding: 20px;
+    overflow: hidden;
+    background-color: rgb(187, 187, 167);
+    border-radius: 10px;
+}
+
+#cources div h4{
+    text-align: center;
+    font-weight: bold;
+    color: blue;
+    /* text-decoration: wavy underline gray */
+
+}
+
+#cources p{
+    text-align: center;
+}
+
+#cources button{
+    margin: 5px 2px 2px 600px;
+    padding: 5px;
+    background-color: blue;
+    color: white;
+}
+
+/* to know about skba */
+#why-skillboost{
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(79, 83, 79);
+    color: white;
+}
+
+#why-skillboost h3{
+    text-align: center;
+    color: yellow;
+}
+
+#free{
+    width: 30%;
+}
+
+#toknowskba{
+    display: flex;
+    margin: 40px 10px 20px 10px;
+    gap: 10px;
+}
+
+/* success */
+#success h3{
+    /* margin: 20px 10px 20px 200px; */
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    font-family: "Merienda", cursive;
+    color: crimson;
+    text-decoration: double underline;
+
+}
+
+#successdiv{
+    display: flex;
+    /* margin-bottom: 10px; */
+}
+
+#success div#first{
+    margin: 0 0 50px 0;
+}
+
+#success div img{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
 }
 
 
 
+/* address at mainpage */
+#contactmain{
+    display: flex;
+    justify-content: center;
+}
+
+#contactmain img{
+    margin: 0 0 5px 50px;
+    width: 100px;
+}
+
+#contactmain p{
+    margin-left: 20px;
+}
 
 
 
