@@ -1,0 +1,212 @@
+@media(max-width:420px){
+    #map{
+        width: 100%;
+    }
+
+    #cont{
+        background-color: #fff;
+        width: 100%;
+        text-align: left;
+    }
+    
+    #cont form{
+        margin: 10px;
+        padding: 5px;
+        width: 100%;
+    }
+    
+    #cont #subm{
+        padding: 10px 20px;
+        border-radius: 6px;
+        color: white;
+    }
+
+    #reasonc li{
+        width: 100%;
+    }
+
+    #nameli li{
+        width: 100%;
+    }
+
+    #mr{
+        margin: 0;
+    }
+}
+
+@media(max-width:420px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    header{
+        width: 100%;
+        display: block;
+    }
+
+    header h1{
+        text-align: center;
+        font-size: 22px;
+        margin-left: 5px;
+    }
+
+    header p{
+        font-size: 12px;
+    }
+
+    header .heading img{
+        text-align: center;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+   
+    main{
+        width: 96%; 
+        /* margin-right: 10px; */
+    }
+
+    #clrab{
+        display: none;
+        content: "";
+        clear: none;
+    }
+
+    nav.navbarmain{
+        margin: 0;
+    }
+
+    nav.navbarmain li{
+        float: none;
+    }
+
+    nav.navbarmain li a:hover{
+        width: 100%;
+        border-radius: 5px;
+        background-color: black;
+        color: white;
+        font-weight: 900;
+    }
+
+    nav.navbarmain li.navlogin{
+        float: none;
+        text-align: center;
+        display: block;
+    }
+    
+    .dropdown-content1{
+        display: none;
+        position: absolute;
+        background-color: gray;
+        min-width: 100%;
+    }
+    
+    .dropdown1:hover .dropdown-content1{
+        display: block;
+    }
+
+    div#search{
+        width: 100%;
+    }
+    
+    div#search input{
+        width: 100%;
+        margin: 5px;
+    }
+    
+    div#search input#subbtn{
+      width: 50%;
+      padding: 5px;
+    }
+
+    .carousel-item img{
+        width: 100%;
+        margin: 0;
+        height: 400px;
+    }
+
+    #about1>p{
+        margin: 0;
+    }
+
+    #cources{
+        margin: 0;
+    }
+
+    #cources div{
+        width: 100%;
+        height: 200px;
+        float: left;
+        margin: 10px 0;
+        padding: 20px;
+        overflow: hidden;
+        background-color: rgb(243, 240, 245);
+        border-radius: 10px;
+    }
+    
+    #cources div h4{
+        text-align: center;
+        font-weight: bold;
+        color: rgb(0, 94, 255);
+    
+    }
+    
+    #cources p{
+        text-align: start;
+    }
+
+    #cources button{
+        margin: auto;
+        margin-left: 20%;
+    }
+
+    #why-skillboost{
+        width: 100%;
+    }
+    
+    #why-skillboost h3{
+        text-align: center;
+        color: yellow;
+    }
+    
+    #free{
+        width: 90%;
+        text-align: center;
+    }
+    
+    #toknowskba{
+        display: block;
+        margin: 0;
+    }
+
+    #successdiv{
+        display: inline-block;
+    }
+    
+    #success div#first{
+        margin: -10px 0 50px 0;
+    }
+    
+    #success div img{
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer{
+        width: 100%;
+        height: 550px;
+    }
+
+    #subm{
+        width: 40%;
+    }
+
+    #cont legend{
+        text-decoration: underline;
+    }
+
+}

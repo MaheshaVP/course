@@ -1,60 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/logowithname.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <title>SkillBoost Academy</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="style1.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/logowithname.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>SkillBoost Academy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="responsive.css">
 </head>
+
 <body>
-    
-<!-- heading -->
- <header>
+
+  <!-- heading -->
+  <header>
     <div class="heading">
-        <img src="./images/logo.jpg" alt="logo" width="65px" height="60px" style="margin-top: 15px;">
-        <span><h1> SkillBoost Acadamy</h1></span>
-        <p>online course platform</p>
+      <img src="./images/logo.jpg" alt="logo" width="65px" height="60px" style="margin-top: 15px;">
+      <span>
+        <h1> SkillBoost Acadamy</h1>
+      </span>
+      <p>online course platform</p>
     </div>
 
     <!-- navbar -->
-     <nav class="navbarmain">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="course.html">Cources</a></li>
-        <!-- <li><a href="Course.html#batchs">Batchs</a></li> -->
-        <li><a href="contact.html">Contact Us</a></li>
-        <li style="float: right; margin-right: 15px;" class="navlogin dropdown1">
-          <a href="#" class="dropbtn1">Login</a>
+    <nav class="navbarmain">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="course.html">Cources</a></li>
+      <!-- <li><a href="Course.html#batchs">Batchs</a></li> -->
+      <li><a href="contact.html">Contact Us</a></li>
+      <li class="navlogin dropdown1">
+        <a href="#" class="dropbtn1">Login</a>
         <div class="dropdown-content1">
-          <a href="">User</a>
-          <a href="">Admin</a>
+          <a href="user.html">User</a>
+          <a href="admin.html">Admin</a>
         </div>
-        </li>
-     </nav>
+      </li>
+    </nav>
 
- </header>
- <br>
+  </header>
+  <br>
 
- <!-- main  -->
+  <!-- main  -->
   <h2>Contact Us :</h2>
 
   <div id="map">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2214.1334230954058!2d77.28360545980976!3d14.094560124793329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb103acd934ff19%3A0xc206cc7481cc3ec1!2sM.S%20HOSPITAL!5e1!3m2!1sen!2sin!4v1741096037781!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2214.1334230954058!2d77.28360545980976!3d14.094560124793329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb103acd934ff19%3A0xc206cc7481cc3ec1!2sM.S%20HOSPITAL!5e1!3m2!1sen!2sin!4v1741096037781!5m2!1sen!2sin"
+      width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
   <br>
 
 
-<div id="cont">
+  <div id="cont">
     <form>
-        <fieldset>
+      <fieldset>
         <legend>Contact form</legend>
         <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname" ><br><br>
+        <input type="text" id="fname" name="fname"><br><br>
         <label for="lname">Last name:</label>
         <input type="text" id="lname" name="lname"><br><br>
         <label for="mail">E-mail &nbsp;:</label>
@@ -64,9 +72,9 @@
 
         <label for="exp">Choose Your Experience level :</label><br>
         <input type="radio" id="exp" name="exp" value="fresher">
-           <label for="fresher">Fresher</label><br>
-           <input type="radio" id="exp" name="exp" value="experience">
-           <label for="experience">Experience</label><br><br>
+        <label for="fresher">Fresher</label><br>
+        <input type="radio" id="exp" name="exp" value="experience">
+        <label for="experience">Experience</label><br><br>
 
         <label for="cars">Choose course : </label>
         <select id="cars" name="cars">
@@ -80,57 +88,59 @@
         <textarea name="message" rows="6" cols="50"></textarea>
         <br><br>
 
-        <label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Above Info is correct
+        <label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Above Info is
+          correct
         </label><br>
 
         <input type="reset" value="Reset" id="subm" style="background-color: brown;">
         <input type="submit" value="Submit" id="subm" style="background-color: greenyellow; color: black;"><br><br>
 
-</fieldset>
-</form> 
-</div>
+      </fieldset>
+    </form>
+  </div>
 
 
 
- <!-- footer -->
- <footer>
+  <!-- footer -->
+  <footer>
 
     <div class="footer-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Cources</a></li>
-        <li><a href="#">Batches</a></li>
-        <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Cources</a></li>
+      <li><a href="#">Batches</a></li>
+      <li><a href="#">Contact Us</a></li>
     </div>
     <br><br>
 
     <div class="add">
-        <Address class="footer-location">
-            <img src="./images/logowithname.jpg" alt="logo" width="100px" height="80px"><br>
-            #24,Banashankari,<br>
-            Pavagada-561202 <br>
-            Ph no  : 9808****46 <br>
-            e-mail : <a href=mailto:skillboostacadamy@gmail.com>skillboostacadamy@gmail.com</a>
-        </Address>  
+      <Address class="footer-location">
+        <img src="./images/logowithname.jpg" alt="logo" width="100px" height="80px"><br>
+        #24,Banashankari,<br>
+        Pavagada-561202 <br>
+        Ph no : 9808****46 <br>
+        e-mail : <a href=mailto:skillboostacadamy@gmail.com>skillboostacadamy@gmail.com</a>
+      </Address>
     </div>
     <br><br>
 
     <div class="clearfix"></div>
 
     <div class="social-icons">
-        <li> <i class="fa-brands fa-linkedin"></i> </li>
-        <li> <i class="fa-brands fa-x-twitter"></i> </li>
-        <li> <i class="fa-brands fa-facebook"></i> </li>
-        <li> <i class="fa-brands fa-instagram"></i> </li>
-        <li> <i class="fa-brands fa-youtube"></i> </li>
+      <li> <i class="fa-brands fa-linkedin"></i> </li>
+      <li> <i class="fa-brands fa-x-twitter"></i> </li>
+      <li> <i class="fa-brands fa-facebook"></i> </li>
+      <li> <i class="fa-brands fa-instagram"></i> </li>
+      <li> <i class="fa-brands fa-youtube"></i> </li>
     </div>
 
     <div class="copyright">
-        <p>&copy; 2025 SkillBoost Acadamy. All rights reserved </p>
-        <p>Designed and Developed by <b>@Mahii</b></p>
+      <p>&copy; 2025 SkillBoost Acadamy. All rights reserved </p>
+      <p>Designed and Developed by <b>@Mahii</b></p>
     </div>
 
   </footer>
 
 </body>
+
 </html>

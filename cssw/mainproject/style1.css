@@ -7,7 +7,7 @@
 }
 
 #cont form{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 10px;
 }
 
@@ -16,3 +16,138 @@
     border-radius: 6px;
     color: white;
 }
+
+/* cources */
+main{
+    margin: 10px;
+}
+
+main h2{
+    color: tomato;
+    font-style: italic;
+    text-align: center;
+}
+
+#descc{
+    background-color: aliceblue;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+#reasonc{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#reasonc li{
+    font-size: 18px;
+    list-style-type:decimal;
+    width: 50%;
+    background-color: rgb(241, 232, 232);
+    justify-content: center;
+    margin: auto;
+}
+
+.card{
+    display: flex;
+    margin: 10px;
+    background-color: lightcyan;
+    border: none;
+    padding: 2px;
+}
+
+.card h1{
+    text-align: center;
+    font-style: italic;
+}
+
+#nameli {
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#nameli li{
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    float: left;
+    list-style-type: none;
+    padding: 20px;
+    background-color: skyblue;
+    margin: 10px;
+    width: 45%;
+
+}
+
+.card li a{
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+div.cd{
+    background-color: white;
+    padding: 10px;
+}
+
+.cd h3{
+    text-align: center;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.cd p{
+    font-family: sans-serif;
+    margin: 10px 0;
+}
+
+#mr{
+    text-align: center; 
+    margin-left: 30%;
+}
+
+
+/* About */
+
+
+#desca{
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 5px;
+}
+
+#aimvis{
+    display: flex;
+    /* float: left; */
+    gap: 10px;
+}
+
+#aimvis div{
+    width: 49%;
+    padding: 10px;
+    background-color: bisque;
+    border-radius: 10px;
+
+}
+
+#aimvis div h4{
+    text-align: center;
+    color: darkblue;
+}
+
+#para{
+    margin: 10px 5px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+#para p{
+    background-color: azure;
+    padding: 5px;
+    border-radius: 5px;
+}
+

@@ -60,6 +60,7 @@ nav.navbarmain li a{
     text-align: center;
     padding: 12px 16px;
     text-decoration: none;
+    font-weight: 900;
 }
 
 nav.navbarmain li a:hover{
@@ -67,6 +68,11 @@ nav.navbarmain li a:hover{
     background-color: black;
     color: white;
     font-weight: 900;
+}
+
+nav.navbarmain li.navlogin{
+    float: right;
+    margin-right: 15px;
 }
 
 .dropdown1 {
@@ -131,51 +137,25 @@ div#search input#subbtn{
 #about1>p{
     margin: 15px;
     padding: 15px;
-    width: 55%;
-    background-color: rgb(21, 227, 227);
-    border: 1px solid black;
+    width: 100%;
+    background-color: rgb(240, 245, 245);
+    /* border: 1px solid black; */
     border-radius: 10px;
 }
 
 #about1>p#first{
-    float: left;
-    margin-bottom: -5px;
-}
-
-#about1>p#second{
-    float: right;
+    /* float: left; */
+    margin-bottom: 5px;
 }
 
 #clrab{
     clear: both;
 }
 
-
-/* home */
-#home{
-    font-family: Geneva, Verdana, sans-serif;
-    margin: 20px;
-    padding: 10px;
-}
-
-#home h5{
-    text-align: center;
-}
-
-#home>button{
-    float: right;
-    margin: 0 150px 0 0;
-    padding: 0 20px;
-    height: 40px;
-    background-color: rgb(117, 234, 99);
-    font-weight: 600;
-    font-size: large;
-}
-
-
 /* cources */
 #cources{
-    margin: 6px 8px;
+    margin: 6px 8px 6px 20px;
+    margin-left: 50px;
 }
 
 #cources h1{
@@ -185,24 +165,22 @@ div#search input#subbtn{
 }
 
 #cources div{
-    width: 45%;
+    width: 46%;
     height: 200px;
     float: left;
-    border: 2px solid black;
-    margin: 5px 10px;
+    /* border: 2px solid black; */
+    margin: 10px 10px;
     /* margin-left: 60px; */
     padding: 20px;
     overflow: hidden;
-    background-color: rgb(187, 187, 167);
+    background-color: rgb(243, 240, 245);
     border-radius: 10px;
 }
 
 #cources div h4{
     text-align: center;
     font-weight: bold;
-    color: blue;
-    /* text-decoration: wavy underline gray */
-
+    color: rgb(0, 94, 255);
 }
 
 #cources p{
@@ -210,19 +188,22 @@ div#search input#subbtn{
 }
 
 #cources button{
-    margin: 5px 2px 2px 600px;
-    padding: 5px;
-    background-color: blue;
-    color: white;
+    margin: auto;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: rgb(51, 244, 244);
+    color: black;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-left: 40%;
 }
 
 /* to know about skba */
 #why-skillboost{
     width: 70%;
-    border: 2px solid black;
     border-radius: 10px;
-    padding: 20px;
-    background-color: rgb(79, 83, 79);
+    padding: 30px;
+    background-color: rgb(57, 58, 57);
     color: white;
 }
 
@@ -255,11 +236,14 @@ div#search input#subbtn{
 
 #successdiv{
     display: flex;
-    /* margin-bottom: 10px; */
 }
 
 #success div#first{
     margin: 0 0 50px 0;
+}
+
+#success div#first img{
+    margin-top: -10px;
 }
 
 #success div img{
@@ -323,7 +307,7 @@ footer .add{
     float: right;
     width: 50%;
     padding: 5px;
-    margin-top: -25px;
+    margin-top: -30px;
     text-align: center;
 }
 
@@ -369,6 +353,12 @@ footer .social-icons li i:hover{
 footer .copyright{
     text-align: center;
     padding-bottom: 10px;
+}
+
+
+#indx{
+    margin: 10px;
+    padding: 10px;
 }
 
 

@@ -1,0 +1,33 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+/* Contact Section */
+.contact-section {
+    background: #f8f9fa;
+    padding: 50px 0;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+}
