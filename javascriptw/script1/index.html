@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
+
+<div id="one">
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+</div><br> <hr>
+
+
+<div id="two">
+    <h2>bulb on off</h2>
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <button type="button" onclick="document.getElementById('bulb').src='./images/bulbon.png'">Bulb-on</button>
+
+    <img id="bulb" src="./images/bulboff.png" alt="bulb default" style="width: 200px;">
+
+    <button type="button" onclick="document.getElementById('bulb').src='./images/bulboff.png'">Bulb-off</button>
+</div><br><hr>
+
+
+<div id="three">
+    <h3>Adding styles using js</h3>
+    <p id="demo1">JavaScript can change the style of an HTML element.</p>
+    <button onclick="document.getElementById('demo1').style.fontSize='60px'">Click</button>
+</div><br><hr>
+
+<div id="four">
+    <h3>Adding styles using js</h3>
+    <p id="demo2">JavaScript can change the style of an HTML element.</p>
+    <button onclick="document.getElementById('demo2').style.display='none'">Click</button>
+</div><br><hr>
+
+<div id="five">
+    <h3>Adding styles using js block</h3>
+    <p>JavaScript can change the style of an HTML element.</p>
+    <p id="demo3" style="display: none">Hello javascript</p>
+    <button onclick="document.getElementById('demo3').style.display='block'">Click</button>
+</div><br><hr>
+
+
+
+</body>
+</html>
