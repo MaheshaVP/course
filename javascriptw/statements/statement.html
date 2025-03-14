@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>JavaScript Statements</h2>
+
+    <p>JavaScript statements are separated by semicolons.</p>
+
+    <p id="demo1"></p><hr>
+
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <button onclick="myFunction()">Click</button><hr>
+
+    <p id="demo4"></p><hr>
+
+    <p id="demo5"></p><hr>
+
+    <p id="demo6"></p><hr>
+
+    <p id="demo7"></p><hr>
+    
+    <script>
+        let a,b,c;
+        a=5;b=6;c=a+b;
+        document.getElementById('demo1').innerHTML=c;
+
+        function myFunction(){
+            document.getElementById('demo2').innerHTML="Hello Dolly";
+            document.getElementById('demo3').innerHTML="How are you";
+        }
+
+        let x;
+        x=6;
+        y=8
+        document.getElementById('demo4').innerHTML=x + (5+6)*10 + y;
+
+        document.getElementById('demo5').innerText="Hello"+" "+"Dolly";
+
+        let x1;
+        x1=8;
+        // x1=9; i will not be executed
+        document.getElementById('demo6').innerText=x1;
+
+        let firstName,lastName;
+        firstName="Jeethendra D";
+        lastName="Shravani";
+        document.getElementById('demo7').innerText=firstName+" weds "+lastName;
+
+
+
+
+    </script>
+
+</body>
+</html>
