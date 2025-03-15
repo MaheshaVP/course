@@ -2,14 +2,120 @@
 <html>
 <body>
 
+
+<!-- Arithemetic -->
+<div>
 <h1>JavaScript Operators</h1>
 <h2>The = Operator</h2>
-
 <p id="demo"></p>
+</div>
+
+<div class="one">
+<h1>JavaScript Operators</h1>
+<h2>The Assignment (=) Operator</h2>
+<p id="demo1"></p>
+</div>
+
+<div class="two">
+<h1>JavaScript Arithmetic</h1>
+<h2>Arithmetic Operations</h2>
+<p>A typical arithmetic operation takes two numbers (or expressions) and produces a new number.</p>
+<p id="demo2"></p>
+</div>
+
+<!-- Assignment -->
+<div class="three">
+<h1>JavaScript Assignment </h1>
+<h2>The += Operator</h2>
+<p id="demo3"></p>
+</div>
+
+<!-- String Comparision -->
+<div class="four">
+<h1>JavaScript comparision </h1>
+<h2>The >= Operator</h2>
+<p id="demo4"></p>
+</div>
+
+<div class="five">
+<h1>JavaScript comparision </h1>
+<h2>The >= Operator</h2>
+<p id="demo5"></p>
+</div>
+
+
+<div class="six">
+<h1>JavaScript comparision </h1>
+<h2>The >= Operator</h2>
+<p id="demo6"></p>
+</div>
+
+
+<div class="seven">
+<h1>JavaScript comparision </h1>
+<h2>The >= Operator</h2>
+<p id="demo7"></p>
+</div>
+
+<div class="eight">
+    <h1>JavaScript comparision </h1>
+    <h2>++ operator</h2>
+    <p id="demo8"></p>
+    </div>
+
 
 <script>
-let x = 10;
-document.getElementById("demo").innerHTML = x;
+
+let x7=9;
+// x7--;
+// let y7=x7;
+// let y7 = x7 ** 2;
+let y7=Math.pow(x7,2)
+document.getElementById('demo8').innerHTML=y7;
+
+
+let x5 = 5;
+let y5 = 2;
+let z5 = x5 + y5;
+document.getElementById('demo7').innerHTML=z5;
+
+
+let x4= "What a very"+ " ";
+x4+="nice day";
+document.getElementById('demo6').innerHTML= x4;
+
+
+let x3='30';
+let y3='6';
+let result3 = x3 < y3;
+document.getElementById('demo5').innerHTML="Is 30 is less than 6 ? "+result3;
+
+
+let x2='A';
+let y2='B';
+let result2 = x2 < y2;
+document.getElementById('demo4').innerHTML="Is A is less than B ? "+result2;
+
+
+let x1=10;
+x1+=6;
+document.getElementById('demo3').innerHTML=x1;
+
+
+let a=3;
+let b=(100+20)*a;
+document.getElementById('demo2').innerHTML=b;
+
+
+let x=5;
+let y=6;
+let z=x+y;
+document.getElementById('demo1').innerHTML=z;
+
+
+let f = 10;
+document.getElementById("demo").innerHTML = f;
+
 </script>
 
 </body>
