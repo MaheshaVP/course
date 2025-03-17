@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h4 id="demo"></h4>
+
+    <h4 id="demo1"></h4>
+
+    <h4 id="demo2"></h4>
+
+
+
+
+
+    <script>
+        function Me(name,age,section,category){
+            this.name = name;
+            this.age = age;
+            this.section = section;
+            this.category = category;
+            this.fullname = function(){
+                return this.name + " "+ this.category;
+            }
+        }
+
+        // Me.changename = function(name){
+        //     this.name = name;
+        // }
+
+        // My.changename = "Kiran";
+
+        Me.nationality = "kan";
+
+        const My = new Me("Mahesh",21,"E","Emp");
+        const Mine = new Me("jeethu")
+
+        document.getElementById('demo').innerHTML= "I am " + My.age +" "+"My name " + Mine.name + " The full name is " + My.fullname();
+
+        document.getElementById('demo1').innerHTML=Me.nationality;
+
+        // document.getElementById('demo2').innerHTML= My.changename();
+    </script>
+</body>
+</html>

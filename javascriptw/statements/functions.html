@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>JavaScript Functions</h1>
+
+    <p>Call a function which performs a calculation and returns the result:</p>
+
+    <p id="demo"></p>
+
+    <h1>JavaScript Functions objects</h1>
+
+<p>Invoke (call) a function that converts from Fahrenheit to Celsius:</p>
+<p id="demo1"></p>
+
+
+<h1>JavaScript Functions variables</h1>
+<p>Using a function as a variable:</p>
+
+<p id="demo2"></p>
+
+<h1>JavaScript Functions</h1>
+
+<p>Outside myFunction() carName is undefined.</p>
+
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+    <script>
+
+let text1 = "Outside: " + typeof carName;
+document.getElementById("demo3").innerHTML = text1;
+
+ function myFunc(){
+    let carName = "kk";
+    let text2 = "Inside: " + typeof carName+" "+carName; 
+    document.getElementById('demo4').innerHTML=text2;
+}
+myFunc();
+
+
+        let text = "The temperature is " + toCelsius(86) + " Celsius.";
+        document.getElementById("demo2").innerHTML = text;
+
+        function toCelsius(fahrenheit) {
+          return (5/9) * (fahrenheit-32);
+        } 
+
+        let val =  toCel(60);
+        document.getElementById('demo1').innerHTML= val;
+
+        function toCel(f){
+            return (5/9)*(f-32);
+        }
+
+
+        let x = myFunction(5,12);
+        document.getElementById('demo').innerHTML=x;
+
+        function myFunction(a,b){
+            return a*b;
+        }
+
+
+    </script>
+</body>
+</html>
