@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="one">
+        <h1 id="myH1"></h1>
+        <p id="myP1"></p>
+    </div><hr>
+
+    <div id="demo1"></div><hr>
+
+       
+    <div id="one">
+        <h1 id="myH2"></h1>
+        <p id="myP2"></p>
+    </div><hr>
+
+    <div id="two">
+        <h2>JavaScript Comments</h2>
+
+        <h1 id="myH3"></h1>
+
+        <p id="myP3"></p>
+
+        <p>The line starting with // is not executed.</p>
+    </div><hr>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript -->
+    <script>
+
+    
+
+        
+    //document.getElementById("myH3").innerHTML = "My First Page";
+    document.getElementById("myP3").innerHTML = "My first paragraph.";
+
+    //multiline comments
+    /*
+    The code below will change
+    the heading with id = "myH"
+    and the paragraph with id = "myP"
+    in my web page:
+    */
+    document.getElementById("myH2").innerHTML = "My First Page";
+    document.getElementById("myP2").innerHTML = "My first paragraph.";
+
+    //demo1
+    let x = 5;      // Declare x, give it the value of 5
+    let y = x + 4;  // Declare y, give it the value of x + 2 
+    document.getElementById('demo1').innerText=y;
+
+
+    //div one
+        //change heading
+        document.getElementById('myH1').innerText="Hello My first page";
+
+        //change paragraph
+        document.getElementById('myP1').innerText="This is my paragraph";
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <script src="index.js"></script>
+
+    <script>
+        function myFunction(){
+            document.getElementById('demo5').innerHTML="Paragraph text";
+        }
+    </script>
+</head>
+<body>
+
+<div id="one">1
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+</div><br> <hr>
+
+
+<div id="two">2
+    <h2>bulb on off</h2>
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <button type="button" onclick="document.getElementById('bulb').src='./images/bulbon.png'">Bulb-on</button>
+
+    <img id="bulb" src="./images/bulboff.png" alt="bulb default" style="width: 200px;">
+
+    <button type="button" onclick="document.getElementById('bulb').src='./images/bulboff.png'">Bulb-off</button>
+</div><br><hr>
+
+
+<div id="three">3
+    <h3>Adding styles using js</h3>
+    <p id="demo1">JavaScript can change the style of an HTML element.</p>
+    <button onclick="document.getElementById('demo1').style.fontSize='60px'">Click</button>
+</div><br><hr>
+
+<div id="four">4
+    <h3>Adding styles using js</h3>
+    <p id="demo2">JavaScript can change the style of an HTML element.</p>
+    <button onclick="document.getElementById('demo2').style.display='none'">Click</button>
+</div><br><hr>
+
+<div id="five">5
+    <h3>Adding styles using js block</h3>
+    <p>JavaScript can change the style of an HTML element.</p>
+    <p id="demo3" style="display: none">Hello javascript</p>
+    <button onclick="document.getElementById('demo3').style.display='block'">Click</button>
+</div><br><hr>
+
+<div id="six">6
+    <h2>JavaScript in Body</h2>
+
+    <p id="demo4"></p>
+</div><br><hr>
+
+<div id="seven">7
+    <h2>Demo JavaScript in Head</h2>
+
+    <p id="demo5">para</p>
+
+    <button type="button" onclick="myFunction()">Click me</button>
+</div><br><hr>
+
+<div id="eight">8
+    <h2>Demo JavaScript in Head</h2>
+
+    <p id="demo6">paragraph</p>
+
+    <button type="button" onclick="myFunction1()">Click me</button>
+</div><br><hr>
+
+<div id="nine">9
+    <h2>Demo JavaScript in Head</h2>
+
+    <p id="demo7">paragraph</p>
+
+    <button type="button" onclick="myFunction2()">Click me</button>
+</div><br><hr>
+
+<div id="ten">10
+    <h2>Demo JavaScript in Head</h2>
+
+    <p id="demo8"></p>
+
+    <button type="button">Click me</button>
+</div><br><hr>
+
+
+<div id="eleven">11
+    <h2>Demo JavaScript in Head</h2>
+
+    <p id="demo11"></p>
+
+    <button type="button">Click me</button>
+</div><br><hr>
+
+
+<div id="twelve">
+    <h2>The window.print() Method</h2>
+
+    <p>Click the button to print the current page.</p>
+
+    <button onclick="window.print()">Print This Page</button>
+</div><br><hr>
+
+<!-- <button onclick="document.write(5+6)">Number</button> -->
+
+
+
+<script>
+    document.getElementById('demo4').innerHTML="Hello Python bros";
+
+    function myFunction1(){
+        document.getElementById('demo6').innerHTML="paragraph has its own javascript text";
+    }
+
+    document.getElementById("demo8").innerHTML="<h2>Hello Puneeth </h2>";
+
+    document.getElementById('demo11').innerText="Hello kerala";
+
+    document.write(6+8);
+
+    // window.alert(5+6);
+
+    // alert("welcome to javascript");
+
+    console.log(20+45);
+
+
+
+</script>
+
+</body>
+</html>
