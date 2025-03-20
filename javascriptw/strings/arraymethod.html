@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The sort() Method</h2>
+
+<p>Click the button (again and again) to sort the array in random order.</p>
+
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<br><br>
+<p id="demo1"></p>
+<br><br>
+
+<p id="demo2"></p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;  
+
+function myFunction() {
+  points.sort(function(){return 0.5 - Math.random()});
+  document.getElementById("demo").innerHTML = points;
+}
+
+
+const points1 = [40, 100, 1, 5, 25, 10];
+points1.sort(function(a,b){
+    return a-b;
+})
+document.getElementById('demo1').innerHTML=points1[0];
+
+const points2 = [40, 100, 1, 5, 25, 10];
+points2.sort(function(a,b){
+    return b-a;
+})
+document.getElementById('demo2').innerHTML=points2[0];
+
+
+</script>
+
+</body>
+</html>
