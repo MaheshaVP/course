@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Iteration</h2>
+    <p id="demo"></p>
+
+
+
+    <script>
+        
+        let letter = ["a","b","c","q"];
+        let words = "";
+        for(let x in letter){
+            words += letter[x] + "<br>";
+        }
+
+
+        document.getElementById('demo').innerHTML=words;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Functions</h1>
+
+<p>Call a function which performs a calculation and returns the result:</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(p1, p2) {
+  return p1 + p2;
+}
+let in1 = prompt("enter first value");
+let in2 = prompt("enter second value");
+console.log(typeof in1);
+
+let i1 = parseInt(in1);
+let i2 = Number(in2);
+console.log(typeof i1);
+console.log(typeof i2);
+
+
+
+let result = myFunction(i1,i2);
+
+document.getElementById("demo").innerHTML = result;
+</script>
+
+</body>
+</html>
