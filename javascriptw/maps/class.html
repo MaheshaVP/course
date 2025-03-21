@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>JavaScript Classes</h1>
+    <p>Creating two car objects from a car class:</p>
+
+    <p id="demo"></p>
+
+    <p id="demo1"></p>
+
+
+    <script>
+        class car{
+            constructor(name,year){
+                this.name = name;
+                this.year = year;
+            }
+
+        //     age(){
+        //     const date = new Date();
+        //     return date.getFullYear() - this.year;
+        // }
+
+        age(x){
+            return year - this.year;
+        }
+
+    }
+
+    const date = new Date();
+    let year = date.getFullYear();
+
+        let myCar1 = new car("BMW",1998);
+        let myCar2 = new car("GTR",2016);
+
+        // document.getElementById('demo').innerHTML= myCar1.name + "<br>" + myCar2.age(year);
+
+        document.getElementById('demo').innerHTML= "my car age is " + myCar1.age() + " years old";
+
+     
+    </script>
+</body>
+</html>

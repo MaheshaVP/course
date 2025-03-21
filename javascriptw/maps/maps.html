@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Maps</h1>
+<h2>The set() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+// const fruits = new Map([
+//   ["apples", 500],
+//   ["bananas", 300],
+//   ["oranges", 200]
+// ]);
+
+// const fruits = new Map();
+
+// Set Map Values
+// fruits.set("apples", 500);
+// fruits.set("bananas", 300);
+// fruits.set("oranges", 200);
+
+// fruits.set("oranges",100);
+
+
+// let numb = fruits.get("oranges");
+// document.getElementById('demo').innerHTML=numb;
+
+
+const fruits = new Map([
+    ["apples", 500],
+    ["bananas", 300],
+    ["oranges", 200]
+]);
+
+let txt1 = "";
+
+fruits.forEach(myFunc);
+
+document.getElementById('demo').innerHTML = txt1;
+
+function myFunc(value,key){
+    txt1 += key + " = " + value + "<br>";
+}
+
+
+</script>
+
+</body>
+</html>

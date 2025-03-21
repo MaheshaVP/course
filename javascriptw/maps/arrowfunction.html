@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Functions</h1>
+<h2>The Arrow Function</h2>
+
+<p>This example shows the syntax of an Arrow Function, and how to use it.</p>
+
+<p id="demo"></p>
+
+<p id="demo1"></p>
+
+<p id="demo2"></p>
+
+
+<script>
+    let myFunction = (x,y) => {
+       return x * y;
+    }
+
+    let p = document.getElementById('demo');
+    p.innerHTML = myFunction(10,28);
+
+    // let hello = " ";
+
+    hello = () => {
+        return "Hello world!";
+    }
+    document.getElementById('demo1').innerHTML = hello();
+
+    hellow = (val) => "Hello" + val;
+    document.getElementById('demo2').innerHTML = hellow(" baby");
+
+</script>
+</body>
+</html>
