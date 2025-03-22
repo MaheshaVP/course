@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<h2 id="demo"></h2>
+
+
+
+<script>
+    // function sumAll(){
+    //     let sum = 0;
+    //     let al = arguments.length;
+    //     for(let i=0; i<al ; i++){
+    //         sum += arguments[i];
+    //     }
+    //     return sum;
+    // }
+    // document.getElementById('demo').innerHTML=sumAll(2,6,4);
+
+
+
+//     function myFunction(arg1, arg2) {
+//   this.firstName = arg1;
+//   this.lastName  = arg2;
+// }
+
+// const myObj = new myFunction("John","Doe");
+// document.getElementById("demo").innerHTML = myObj.firstName; 
+
+// function myFunction(arg1,arg2) {
+//         this.firstName = arg1;
+//         this.lastName = arg2; 
+//     }
+
+//     const myObj = new myFunction("jeeth","shrav");
+
+//     document.getElementById("demo").innerHTML = myObj.firstName;
+
+
+
+    const myObject = {
+  firstName:"John",
+  lastName: "Doe",
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+document.getElementById("demo").innerHTML = myObject.fullName();
+
+
+
+</script>
+
+</body>
+</html>
