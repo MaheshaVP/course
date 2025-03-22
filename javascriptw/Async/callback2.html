@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>User Information</h1>
+<p id="userData">Fetching user data...</p>
+
+<script>
+function displayUserData(data) {
+    document.getElementById("userData").innerHTML = `Name: ${data.name}, Email: ${data.email}`;
+}
+
+function fetchUserData(callback) {
+    // Simulating an API call using setTimeout
+    setTimeout(function() {
+        let user = { name: "John Doe", email: "johndoe@example.com" };
+        callback(user); // Using the callback function to display data
+    }, 2000);
+}
+
+fetchUserData(displayUserData);
+</script>
+
+</body>
+</html>
