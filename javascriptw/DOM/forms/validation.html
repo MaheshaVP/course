@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Javascript form validation</h1>
+    <form action="/actionpage.py" name="myForm" onsubmit="return validation()" method="post">
+        first name : <input type="text" name="fname" id="fname">
+        <input type="submit" value="submit">
+    </form>
+
+    <h2>JavaScript Validation</h2>
+
+    <p>Please input a number between 1 and 10:</p>
+    
+    <input id="numb">
+    
+    <button type="button" onclick="myFunction()">Submit</button>
+    
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+
+    <script>
+        function validation(){
+            let x = document.forms["myForm"]['fname'].value;
+
+            if(x==""){
+                alert("name must be filled out");
+                return false;
+            }
+        }
+
+        function myFunction(){
+            let y = document.getElementById('numb').value;
+
+            let text;
+            if(isNaN(y) || y<1 || y>10){
+                text = "Input  not valid";
+            }else{
+                text = "it's ok";
+            }
+            document.getElementById('demo1').innerHTML = text;
+        }
+
+    </script>
+</body>
+</html>

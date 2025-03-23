@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>set time out</h2>
+    <p id="demo">Loading....</p>
+
+    <p id="demo1">Loading1....</p>
+
+    <script>
+
+        setInterval(Timing,1000);
+
+        function Timing(){
+            let date = new Date();
+
+            document.getElementById('demo1').innerHTML= 
+            date.getHours() + ":" +
+            date.getMinutes() + ":" +
+            date.getSeconds() ;
+        }
+
+        // setTimeout(myFunction,3000);
+
+        // function myFunction(){
+        //     let p = document.getElementById('demo');
+        //     p.innerHTML= "I Love You...!";
+        // }
+
+    </script>
+</body>
+</html>

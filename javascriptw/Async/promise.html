@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h3>Set Time Out</h3>
+    <h4 id="demo"></h4>
+
+
+    <script>
+        const myPromise = new Promise(function(myResolve,myReject){
+            setTimeout(function(){
+                myResolve("I Love You..")
+            },2000);
+        }
+        );
+
+        myPromise.then(function(value){
+            document.getElementById('demo').innerHTML=value;
+        });
+
+
+
+    //     function Text(txt){
+    //         document.getElementById('demo').innerHTML = txt;
+    //     }
+
+        
+    //     let myPromise = new Promise(function(success,unsucce) {
+    //         let x=0;
+
+    //         if(x==0) {
+    //             success("Good job");
+    //         }else{
+    //             unsucce("error");
+    //         }
+    //     });
+
+
+    //     myPromise.then(
+    //         function(value){Text(value);},
+    //         function(error){Text(error);}
+    // )
+
+    </script>
+</body>
+</html>
