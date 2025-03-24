@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Form validation</h2>
+    <input type="number" id="in1" min="100" max="250" required>
+    <button onclick="myFunction()">OK</button>
+    <!-- <input type="submit" value="OK" onclick="myFunction()">     -->
+    <p id="ptext"></p>
+    <p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+
+    <hr>
+
+    <p>Enter text between 0 to 200</p>
+    <input type="number" id="in2" max="200">
+    <button onclick="overFlow()">RangeOverflow</button>
+    <p id="demo"></p>
+
+    <hr>
+
+    <p>Enter text above 10</p>
+    <input type="number" id="in3" min="10">
+    <button onclick="underFlow()">RangeUnderflow</button>
+    <p id="demo1"></p>
+
+    <hr>
+
+    <button onclick="Back()">Go Back</button>
+
+    <hr>
+
+    <p id="demo2"></p>
+
+    <hr>
+
+    
+
+    <script>
+
+        localStorage.setItem("name","Mahesh");
+        document.getElementById('demo2').innerHTML = localStorage.getItem("name");
+
+        //---------------------------
+
+        function Back() {
+            window.history.back();
+        }
+
+        //---------------------------------------
+
+function underFlow() {
+            let text;
+            if(document.getElementById('in3').validity.rangeUnderflow){
+                text = "value is too small";
+            }else{
+                text = "Its Ok";
+            }
+            document.getElementById('demo1').innerHTML = text;
+        }
+
+
+        function overFlow() {
+            let text;
+            if(document.getElementById('in2').validity.rangeOverflow){
+                text = "value is too large";
+            }else{
+                text = "Its Ok";
+            }
+            document.getElementById('demo').innerHTML = text;
+        }
+
+
+//-----------------------------------------
+        function myFunction(){
+            let inp = document.getElementById('in1');
+            if(!inp.checkValidity()){
+                document.getElementById('ptext').innerHTML = inp.validationMessage;
+            }else{
+                document.getElementById('ptext').innerHTML="its ok";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exchange the data to stringify()</h1>
+    <p id="demo"></p>
+    <hr>
+
+    <p id="demo1"></p>
+    <hr>
+
+    <p id="demo2"></p>
+    <hr>
+
+    <p id="demo3"></p>
+    <hr>
+
+    <p id="demo4"></p>
+    <hr>
+
+    <p id="demo5"></p>
+    <hr>
+
+    <p id="demo6"></p>
+    <hr>
+
+
+    <script>
+const myJSON6 = '{"name":"John", "age":30, "cars":["Ford", "BMW", "Fiat"]}';
+const myObj6 = JSON.parse(myJSON6);
+
+let text1 = "";
+for(let i=0;i<myObj6.cars.length;i++){
+    text1 += myObj6.cars[i] + ",";
+}
+document.getElementById('demo6').innerHTML = text1;
+
+//-------------------------------------
+const myJSON5 = '{"name":"John", "age":30, "car":null}';
+const myobj5 = JSON.parse(myJSON5);
+
+let text = "";
+for(let x in myobj5){
+    text += x + ",";
+    // text += myobj5[x] + ",";
+}
+document.getElementById('demo5').innerHTML = text;
+
+
+    //---------------------------------
+    const myObj4 = {"name":"John", "age":30, "car":null};
+    document.getElementById("demo4").innerHTML = myObj4.name;
+
+
+        //---------------------------------------
+        const date =  {name: "John", today: new Date(), city: "New York"};
+        const datejson = JSON.stringify(date);
+        document.getElementById('demo3').innerHTML = datejson;
+
+        //------------------------------
+        let bool = new Boolean(1);
+        const myJSON1 = JSON.stringify(bool);
+        document.getElementById('demo2').innerHTML = myJSON1;
+
+
+        //---------------------------------
+        const arr = ["John", "Peter", "Sally", "Jane"];
+        const myObj = JSON.stringify(arr);
+        document.getElementById('demo1').innerHTML = myObj;
+
+
+        //--------------------------------------
+        const obj = {name:"chethu",age:36,class:"MCA"};
+        const myJSON = JSON.stringify(obj);
+        document.getElementById('demo').innerHTML = myJSON;
+
+    </script>
+</body>
+</html>

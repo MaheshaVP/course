@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>JavaScript HTML DOM</h2>
+    <p>Add a new HTML Element.</p>
+
+    <div id="div1">
+    <p id="p1">This is a paragraph.</p>
+    <p id="p2">This is another paragraph.</p>
+    </div>
+
+    <button onclick="myFunction()">Remove element</button>
+
+<script>
+
+    const para = document.createElement('p');
+    const node = document.createTextNode("this is new");
+    para.appendChild(node);
+    const elem = document.getElementById('div1');
+    elem.appendChild(para);
+    elem.removeChild(para);
+
+    const para1 = document.createElement('p');
+    const paratext = document.createTextNode("this is second node");
+    para1.appendChild(paratext);
+    const elem1 = document.getElementById('div1');
+    const child1 = document.getElementById('p1');
+    elem1.insertBefore(para1,child1);
+
+    function myFunction(){
+        document.getElementById('p1').remove();
+    }
+</script>
+
+</body>
+</html>

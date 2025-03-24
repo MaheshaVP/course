@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>JavaScript addEventListener()</h2>
+<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+<button id="myBtn">Try it</button>
+<p id="demo"></p>
+
+
+<button id="btn">Window pop up</button>
+<hr>
+
+<button id="multi">Multitask</button>
+<p id="demo2"></p>
+
+<h2>random</h2>
+<p id="demo3"></p>
+
+<script>
+
+    window.addEventListener("resize",function(){
+        document.getElementById('demo3').innerHTML = Math.random();
+    })
+
+    
+
+    let btn1 = document.getElementById('multi');
+    btn1.addEventListener("mouseover",firstFunc);
+    btn1.addEventListener("click",secondFunc);
+    btn1.addEventListener("mouseout",thirdFunc);
+
+    function firstFunc(){
+        document.getElementById('demo2').innerHTML += "MouseOver <br>"
+    }
+    function secondFunc(){
+        document.getElementById('demo2').innerHTML += "clicked <br>"
+    }
+    function thirdFunc(){
+        document.getElementById('demo2').innerHTML += "MouseOut <br>"
+    }
+
+
+    document.getElementById('btn').addEventListener("click",function(){
+        alert("Hi user");
+    });
+
+
+    document.getElementById('myBtn').addEventListener("click",displayDate);
+    document.getElementById('myBtn').addEventListener("click",Name);
+
+    function displayDate(){
+        alert("welcome");
+    document.getElementById('demo').innerHTML = Date();
+    }
+
+    function Name() {
+        alert("welcome to the event handler");
+    }
+</script>
+</body>
+</html>

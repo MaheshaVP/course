@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Creating an Object from a JSON String</h2>
+    <p id="demo"></p>
+    <hr>
+
+    <p id="demo1"></p>
+    <hr>
+
+    <p id="demo2"></p>
+    <hr>
+
+    <p id="demo3"></p>
+
+
+
+
+
+    <script>
+
+    const text3 = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';    
+    const obj3 = JSON.parse(text3,function(key,value){
+        if(key == "birth") {
+            return new Date(value);
+        }else{
+            return value;
+        }
+    });
+    document.getElementById('demo3').innerHTML = obj3.name + "," + obj3.birth;
+
+
+
+
+        //------------------------------------------------
+
+        const text2 = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
+        const obj2 = JSON.parse(text2);
+        obj2.birth = new Date(obj2.birth);
+        document.getElementById ('demo2').innerHTML = obj2.name + " , " + obj2.birth; 
+
+        //------------------------------------------------
+
+        const text = '[ "Ford", "BMW", "Audi", "Fiat" ]';
+        const obj1 = JSON.parse(text);
+        document.getElementById('demo1').innerHTML = obj1;
+
+        //--------------------------------------------
+
+        const txt =  '{"name":"John", "age":30, "city":"New York"}';
+        const obj = JSON.parse(txt);
+        document.getElementById('demo').innerHTML = obj.name + "," +obj.age;
+
+    </script>
+</body>
+</html>

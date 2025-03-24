@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>fetch file using Async and await</h2>
+    <p id="text"></p>
+
+
+    <script>
+
+   async function getInfo(file) {
+    let x =await fetch(file);
+    let y =await x.text();
+    document.getElementById('text').innerHTML = y;
+   }
+
+   getInfo("file.txt");
+
+
+
+// function getInfo(file) {
+//     fetch(file)
+//     .then(x=>x.text())
+//     .then(y=>{document.getElementById('text').innerHTML=y})
+//     .catch(error => console.log("error fetching file",error));
+// }
+// getInfo("file.txt");
+
+
+// let file = "file.txt"
+// fetch(file)
+//     .then(x=>x.text())
+//     .then(y=>document.getElementById('text').innerHTML=y)
+  
+
+    </script>
+</body>
+</html>

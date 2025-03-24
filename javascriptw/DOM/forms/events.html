@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="checkCookies()">
+    
+    <h1 onclick="this.innerHTML = 'oops..'">click on this text</h1>
+<hr>
+
+    <h2 onclick="changeTxt(this)">click here</h2>
+
+<hr>
+
+    <p>Click the button to display date</p>
+    <button onclick="displayDate()">This is Time</button>
+    <p id="demo"></p>
+
+<hr>
+    <p>Try this to display the date function</p>
+    <button id="myBtn">Click me</button>
+    <p id="myBtnText"></p>
+
+<hr>
+    <h1>JavaScript HTML Events</h1>
+    <h2>The onload Attribute</h2>
+    <p id="demo1"></p>
+
+<hr>
+
+    <input type="text" name="fname" id="fname" onchange="capital()">
+    <p>When you write in the input field, a function is triggered to transform the input to upper case.</p>
+
+<hr>
+    <p>Write something in the search field and press "ENTER".</p>
+    <input type="search" id="myInput" onsearch="myFunction()">
+    <p><strong>Note:</strong> The onsearch event is not supported in Internet Explorer, Firefox or Opera 12 and earlier versions.</p>
+    <p id="demosearch"></p>
+
+<hr>
+
+<h2>Mouse hover</h2>
+<div onmouseover="mover(this)" onmouseout="mout(this)" style="width: 200px; height: 100px;background-color: tomato;text-align: center; padding: 30px;">Mouse over me</div>
+<hr>
+
+<div onmouseup="mup(this)" onmousedown="mdown(this)" style="width: 200px; height: 100px;background-color: tomato;text-align: center; padding: 30px;">Click me (onclick function)</div>
+<hr>
+
+
+    <script>
+
+        function mdown(obj) {
+            obj.style.backgroundColor = "skyblue";
+            obj.innerHTML="relese me";
+        }
+        function mup(obj) {
+            obj.style.backgroundColor = "tomato";
+            obj.innerHTML = "Thank you"
+        }
+
+
+
+        function mover(text) {
+            text.innerHTML = "Thank you";
+        }
+
+        function mout(text) {
+            text.innerHTML = "Mouse over me";
+        }
+
+
+
+        function myFunction() {
+            let x = document.getElementById('myInput');
+            document.getElementById('demosearch').innerHTML = "you are searching for : " + x.value;
+        }
+
+    
+    function capital() {
+        let x = document.getElementById('fname');
+        x.value = x.value.toUpperCase();
+    }
+
+
+
+
+        function checkCookies(){
+            let text = "";
+            if(navigator.cookieEnabled == true){
+                text = "Cookies are enabled";
+            }else{
+                text = "Cookies are not enabled";
+            }
+            document.getElementById('demo1').innerHTML = text;
+        }
+
+
+
+        document.getElementById('myBtn').onclick = display;
+
+        function display() {
+            document.getElementById('myBtnText').innerHTML = Date();
+        }
+
+
+        function displayDate(){
+            document.getElementById('demo').innerHTML = Date();
+        }
+        
+        function changeTxt(id) {
+            id.innerHTML="oops";
+        }
+
+    </script>
+</body>
+</html>
