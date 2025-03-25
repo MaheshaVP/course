@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+</head>
+<body>
+    <h2>Generate a cat random Image</h2>
+    <button id="getimgbtn">Get Image</button><br><br>
+    <img src="" alt="" id="result" width="200px" height="200px">
+
+
+    <!-- fact -->
+    <h2>Get facts</h2>
+    <button id="getFact">Get Fact</button>
+    <p id="facttext"></p>
+
+    <script>
+        let btn = document.getElementById('getimgbtn');
+
+        let url = "https://dog.ceo/api/breeds/image/random";
+
+        btn.addEventListener("click",async ()=>{
+            let fgoto =await getImage();
+            let img = document.querySelector("#result");
+            img.setAttribute("src",fgoto);
+            console.log(fgoto);
+        });
+
+        async function getImage() {
+            try{
+                let res =await axios.get(url);
+                return res.data.message;
+            }catch(err) {
+                console.log("error :",err);
+                return "/";
+            }
+        }
+
+        // fact
+        let facturl =  "https://catfact.ninja/fact";
+
+        let factbtn = document.querySelector("#getFact");
+
+        factbtn.addEventListener("click",async ()=>{
+            let factgo =await getText();
+            let p = document.querySelector("#facttext");
+            p.innerText = factgo;
+            console.log(factgo);
+        });
+        
+        async function getText() {
+            try{
+                let factres =await axios.get(facturl);
+                return factres.data.fact;
+            }catch(error) {
+                console .log(error);
+                return "/";
+            }
+        }
+
+    </script>
+</body>
+</html>
