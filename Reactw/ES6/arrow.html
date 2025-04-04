@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Function</h1>
+<p>This demonstrates a regular function, NOT an arrow function.</p>
+<p id="demo"></p>
+<hr>
+<p id="demo1"></p>
+<hr>
+
+
+
+    <script>
+        // hello = function() {
+        //     return "hello world";
+        // }
+
+        // hello = () => "Hello world";
+
+        hello = () => {
+            return "Hello world";
+        }
+        document.getElementById('demo').innerHTML=hello();
+
+
+        demo = (val) => {
+            return "Hello"+" "+ val;
+        }
+        document.getElementById('demo1').innerHTML = demo("Evening")
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        class School {
+            constructor (primary) {
+                this.first = primary;
+            }
+            old() {
+                return 'My First school is '+ this.first;
+            }
+        }
+
+        class College extends School {
+            constructor(primary , secondary) {
+                super(primary);
+                this.second = secondary;
+            }
+            new() {
+                return this.old() + ' My college is ' + this.second;
+            }
+        }
+
+        const myCollege = new College ("GLPS","Govt PUC");
+        document.write(myCollege.new()); 
+
+    </script>
+</body>
+</html>
