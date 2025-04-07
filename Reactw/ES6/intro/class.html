@@ -7,8 +7,62 @@
 </head>
 <body>
     
+    <!-- method -->
+<p id="method"></p>
+<hr>
+
+<!-- inheritance -->
+<p id="inherit"></p>
+
+<hr><br>
+
 
     <script>
+
+        class Place {
+            constructor(city,dis) {
+                this.cityName = city;
+                this.distance = dis;
+            }
+            showname() {
+                return "The city name is : " + this.cityName + "<br>" + " It has distace of : " + this.distance  + "<br>";
+            }
+        }
+
+        class Famous extends Place {
+            constructor(city,famousplace,dis) {
+                super(city,dis);
+                this.fplace = famousplace; 
+            }
+            showFamous() {
+                return this.showname() + " The famous plaec is : " + this.fplace;
+            }
+        }
+
+        const myFamous = new Famous("Mumbai","Bombay high","longer");
+        const placeresult = myFamous.showFamous();
+
+        document.getElementById('inherit').innerHTML = placeresult;
+
+//----------------------------------------------------------
+        class Student {
+            constructor(name,qualify) {
+                this.stdname = name;
+                this.course = qualify;
+            }
+            
+            present() {
+                return "My name is : "+ this.stdname + " and he studied "+ this.course;
+            }
+        }
+
+        const mystudent = new Student("Cheth","BCA");
+        const resultmethod = mystudent.present();
+
+        document.getElementById('method').innerHTML = resultmethod;
+
+
+//----------------------------------------------------------------------
 
         class Car {
             constructor(name,year) {
