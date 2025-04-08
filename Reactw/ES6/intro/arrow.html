@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p id="demo1"></p>
+<hr>
+
+<p id="demo2"></p>
+<hr>
+
+<p id="demo3"></p>
+<hr>
+
+
+
+
+
+    <script>
+        //------------demo3---------------
+        hello3 = (val) => {
+            return "Hello " + val;
+        }
+        document.getElementById('demo3').innerHTML=hello3("Guys");
+
+
+
+        //----------demo1------------------------
+        hello1 = function() {
+            return "Hello world!";
+        }
+        const demo1 = document.getElementById('demo1');
+        demo1.innerHTML=hello1();
+
+        //--------demo2-----------------
+        hello2 = () => {
+            return "Good Morning";
+        }
+        document.getElementById('demo2').innerHTML=hello2();
+
+
+    </script>
+</body>
+</html>
