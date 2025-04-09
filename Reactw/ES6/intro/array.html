@@ -9,28 +9,21 @@
         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
-    
-<div id="mydiv"></div>
 
-<!-- class -->
- <p id="class"></p>
+    <div id="mydiv"></div>
+    
+
 
     <script type="text/babel">
 
+        const array = ['apple','banana','mango']
+        const myList = array.map(
+            (item) => <p>{item}</p>
+        )
 
+        const root =ReactDOM.createRoot( document.getElementById('mydiv'));
+        root.render(myList);
 
-
-//--------------------------------
-
-function Hello() {
-    return <h1>Good Morning</h1>
-}
-
-//----------------------
-
-
-const root = ReactDOM.createRoot(document.getElementById('mydiv'));
-root.render(<Hello/>)
     </script>
 </body>
 </html>

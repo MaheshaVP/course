@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+
+    <hr>
+
+    <p id="demotwo"></p>
+    <hr>
+
+    <script>
+
+        function Calculate(a,b) {
+            const add = a+b;
+            const sub = a-b;
+            const multi = a*b;
+            const div = a/b;
+
+            return[add,sub,multi,div]
+        }
+
+        const [add,sub,multi,div] = Calculate(5,6);
+
+        document.write("<p>sum : "+ add + "</p>");
+        document.write("<p>sub : "+ sub + "</p>")
+        document.write("<p>multi : "+ multi + "</p>")
+        document.write("<p>div : "+ div + "</p>")
+
+        //------------------------------
+        const vehicleone = {
+            brand: 'Ford',
+            model: 'Mustang',
+            type: 'car',
+            year: 2021, 
+            color: 'red'
+        }
+
+        myvehicle(vehicleone)
+
+        function myvehicle ({type,color,year,model,brand}) {
+            const message = 'my '+ type + ' is '+ color + ' ' + brand + ' ' + model + '.';
+
+            document.getElementById('demo').innerHTML = message;
+        }
+
+        //---------------------------
+        const vehicletwo = {
+            brand: 'Ford',
+            model: 'Mustang',
+            type: 'car',
+            year: 2021, 
+            color: 'red',
+            registration: {
+                city: 'Houston',
+                state: 'Texas',
+                country: 'USA'
+            }
+        }
+
+        myvehicletwo(vehicletwo)
+
+        function myvehicletwo ({model , registration:{state}}) {
+            const messagetwo =  'My ' + model + ' is registered in ' + state + '.';
+
+            document.getElementById('demotwo').innerHTML = messagetwo;
+        }
+
+
+    </script>
+</body>
+</html>
