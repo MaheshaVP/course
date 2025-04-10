@@ -1,35 +1,25 @@
-// import logo from './logo.svg';
-// import './App.css';
+import Car from "./Car";
+import Car1 from "./Car1";
+import Car5 from "./Car5"
+import Car6 from "./Car6";
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-import './App.css'
 function App() {
   return (
     <div className= "App">
       <h1>Hello world</h1>
+
+      <Car color="red"/>
+      <hr/>
+
+      <Car1 />
+      <hr/>
+
+      <Car5/>
+      <hr/>
+
+      <Car6/>
     </div>
   );
+
 }
 export default App
