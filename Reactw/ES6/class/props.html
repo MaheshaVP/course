@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="root"></div>
+
+
+    <script type="text/babel">
+
+        //------------------props-----------------
+        function Car(props) {
+            return <h2>I am a {props.brand}</h2>
+        }
+
+        const myelement = <Car brand="Benz"/>
+
+        //-------------------pass data ---------------
+        function Car1 () {
+            return <h2>I am a {props.brand}</h2>
+        }
+
+        function Garage1() {
+            return (
+                <>
+                <h1>Who lives in my garage?</h1>
+                <Car brand="BMW"/>
+                </>
+            );
+        }
+
+        //------------------data in string------------
+        function Car2 () {
+            return <h2>I am a {props.brand}</h2>
+        }
+
+        function Garage2 () {
+            const carname = "Roles Roys";
+            return (
+                <>
+                <h1>Who lives in my garage?</h1>
+                <Car brand={carname}/>
+                </>
+            );
+        }
+
+        //------------------------
+        function Car3 (props) {
+           return <h2>Im a {props.brand.model}</h2>
+        }
+
+        function Garage3() {
+            const carInfo = {name : "Ford", model : "mustag"};
+            return(
+                <>
+                <h1>Who lives in my garage?</h1>
+                <Car3 brand={carInfo}/>
+                </>
+            )
+        }
+
+
+        const container = document.getElementById('root');
+        const root = ReactDOM.createRoot(container);
+        root.render(Garage3());
+
+        // const root = ReactDOM.createRoot(document.getElementById('root'));
+        // root.render()
+
+    </script>
+</body>
+</html>

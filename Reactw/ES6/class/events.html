@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        function Football() {
+            const shoot = () => {
+                alert("Great shot");
+            }
+
+            return(
+            <button type="button" onClick={shoot}>Take a shot</button>
+            );
+        }
+
+        //-------------passing arguments--------------
+        function Football1() {
+            const shot=(a) => {
+                alert(a);
+            }
+
+            return(
+            <button type="button" onClick={()=>shot("Goal")}>Take Shot</button>
+            );
+        }
+
+        //--------------event type---------------
+        function Football2() {
+            const shot = (a,b) =>{
+                alert(a);
+                alert(b.type);
+            }
+            return(
+                <button type="button" onClick={(event)=>shot("Goal",event)}>Click event</button>
+            )
+        }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<Football2/>);
+
+    </script>
+</body>
+</html>

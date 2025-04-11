@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+//----------------if------------
+       function MissedGoal() {
+        return <h1>Missed</h1>
+       }
+
+       function MadeGoal() {
+        return <h1>Goal</h1>
+       }
+
+       function Goal(props) {
+        const check = props.isGoal;
+        if(check) {
+            return <MadeGoal/>
+        }
+        return <MissedGoal/>
+       }
+
+//------logical operator------------
+       function Garage(props) {
+        const vehicles = props.cars;
+        return(
+            <>
+                <h1>Garage</h1>
+                {vehicles.length > 0 && 
+                    <h2>you have {vehicles.length} in your garage</h2>
+                }
+            </>
+
+        )
+       }
+       const cars = ['Ford', 'BMW', 'Audi'];
+
+       //----------------Ternary operator--------
+       function Goalt (props) {
+        const checkt = props.isGoalt;
+
+        return(
+            <>
+                {checkt ? <MadeGoal/>:<MissedGoal/> }
+            </>
+        )
+       }
+
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<Goalt isGoalt={true}/>);
+
+    </script>
+</body>
+</html>
