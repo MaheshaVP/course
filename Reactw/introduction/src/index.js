@@ -147,8 +147,29 @@ class Header2 extends React.Component{
   }
 }
 
+//---------render---------------------
+
+class Render extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {favcolor : "red"};
+  }
+  changecolor=() => {
+    this.setState({favcolor:"Green"})
+  }
+
+  render() {
+    return(
+      <div>
+        <h1>My fav color is {this.state.favcolor}</h1>
+        <button type='button' onClick={this.changecolor} >Click me</button>
+      </div>
+    )
+  }
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Header2/>);
+root.render(<App/>);
 
 // const conatiner = document.getElementById('root');
 // const root1 = ReactDOM.createRoot(conatiner);

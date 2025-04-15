@@ -17,29 +17,48 @@
     <script type="text/babel">
 
 //------------map without key---------
-function Car(props) {
-    return <li>I am a {props.brand}</li>
-}
+// function Car(props) {
+//     return <li>I am a {props.brand}</li>
+// }
 
-function Garage() {
-    const cars = [
-    {id: 1, brand :'Ford'},
-    {id: 2, brand: 'BMW'},
-    {id: 3, brand: 'Audi'}
-    ];
+// function Garage() {
+//     const cars = [
+//     {id: 1, brand :'Ford'},
+//     {id: 2, brand: 'BMW'},
+//     {id: 3, brand: 'Audi'}
+//     ];
 
-    // const cars = ['Ford', 'BMW', 'Audi'];
+//     // const cars = ['Ford', 'BMW', 'Audi'];
 
-    return(
-    <div>
-        <h1>Who are in the Garage</h1>
-        {cars.map((car)=><Car key={car.id} brand={car.brand}/>)}    
-    </div>
-    );
-}
+//     return(
+//     <div>
+//         <h1>Who are in the Garage</h1>
+//         {cars.map((car)=><Car key={car.id} brand={car.brand}/>)}    
+//     </div>
+//     );
+// }
 
 //-----------
-  
+  function Car(props) {
+    return <h1>I am {props.brand}</h1>
+  }
+
+  function Garage() {
+    const cars = [
+        {id: 1, brand: 'Ford'},
+        {id: 2, brand: 'BMW'},
+        {id: 3, brand: 'Audi'}
+    ];
+
+    return(
+        <div>
+            <h1>Who lives in the garage?</h1>
+            <ul>
+                {cars.map((car)=><Car key={car.id} brand={car.brand}/>)}    
+            </ul>    
+        </div>
+    )
+  }
 
     const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(<Garage/>);
