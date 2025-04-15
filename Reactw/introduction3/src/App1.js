@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Todo from "./Todo";
 import React from "react";
+import App2 from "./App2";
 
 const App1 = () => {
     const [count, setCount] = useState(0);
@@ -17,6 +18,10 @@ const App1 = () => {
         <div>
           Count: {count}
           <button onClick={increment}>+</button>
+
+          <hr/>
+
+          <App2/>
         </div>
       </>
     );
