@@ -1,0 +1,72 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+
+    <div id="mydiv"></div>
+
+    <script type="text/babel">
+ 
+        const myArray = ["apple","banana","cherry"];
+
+        const myList = myArray.map((item)=><p>{item}</p>);
+
+        const vehcle = {
+            brand : 'bmw',
+            model : 'tata',
+            color : 'red'
+        }
+
+        const updateVehicle = {
+            color : 'green',
+            type : 'car',
+            year : 2022
+        }
+
+        const myupdateVehicle = {...vehcle,...updateVehicle}
+        console.log(myupdateVehicle);
+
+      
+      const container = document.getElementById('mydiv');
+      const root = ReactDOM.createRoot(container);
+      root.render(myupdateVehicle)
+      console.log(myupdateVehicle);
+    </script>
+
+  </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>press inspect</p>
+
+    <script>
+                const vehcle = {
+            brand : 'bmw',
+            model : 'tata',
+            color : 'red'
+        }
+
+        const updateVehicle = {
+            color : 'green',
+            type : 'car',
+            year : 2022
+        }
+
+        const myupdateVehicle = {...vehcle,...updateVehicle}
+        console.log(myupdateVehicle);
+    </script>
+</body>
+</html>
