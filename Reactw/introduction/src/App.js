@@ -3,6 +3,7 @@ import Car1 from "./Car1";
 import Car5 from "./Car5"
 import Car6 from "./Car6";
 import Conatiner from "./Container";
+import Form from "./Form";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
       <hr/>
 
       <Car6/>
+
+      <hr/>
+      <Form/>
     </div>
   );
 
