@@ -4,6 +4,7 @@ import Car from './Car';
 import FavoriteColor from './FavoriteColor';
 import Timer from './Timer';
 import Counter from './Counter';
+import Component1 from './components/Component1'
 
 function App() {
   return (
@@ -14,15 +15,18 @@ function App() {
     <Counter/>
     <hr/>
 
-    <Timer/>
+     <Timer/>
+     <hr/>
 
-    {/* <Favcolor/>
-    <hr/>
+    <Component1 />
+
+     <Favcolor/>
+     <hr/>
 
     <Car/>
     <hr/>
 
-    <FavoriteColor/> */}
+    <FavoriteColor/> 
     </div>
   );
 }

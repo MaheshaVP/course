@@ -40,9 +40,6 @@ function Car() {
             onClick={()=>setCount(count + 1)}
             >+</button>
             <hr/>
-
-            
-
         </div>
     )
 }
