@@ -1,5 +1,6 @@
 import './App.css'
 import Counter from './Counter';
+import Jsx from './jsx';
 import Map from './map';
 import Map2 from './Map2';
 
@@ -12,6 +13,7 @@ function App() {
       <Map/>
       <Map2/>
       <Counter/>
+      <Jsx />
     </div>
     
   );
