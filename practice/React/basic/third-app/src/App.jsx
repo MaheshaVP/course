@@ -1,4 +1,5 @@
 import Form from "./Form"
+import Myform from "./Myform"
 
 
 function App(){
@@ -6,6 +7,8 @@ function App(){
     <div>
       <h1>Hello React</h1>
       <Form />
+
+      <Myform />
     </div>
   )
 }
