@@ -1,5 +1,7 @@
 import Form from "./Form"
 import Myform from "./Myform"
+import Radio from "./Radio"
+import Myapp from "./Myapp"
 
 
 function App(){
@@ -9,6 +11,10 @@ function App(){
       <Form />
 
       <Myform />
+
+      <Radio />
+      <br/>
+      <Myapp />
     </div>
   )
 }

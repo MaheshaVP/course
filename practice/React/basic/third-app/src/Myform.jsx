@@ -12,8 +12,8 @@ const Myform = () => {
     }
 
     return(
-        <form>
 
+        <form>
             <label htmlFor="fname" > First Name :
                 <input type="text" 
                 name="fname"
@@ -26,6 +26,10 @@ const Myform = () => {
                 name="lname"
                 value={inputs.lname}
                 onChange={handleChange}/>
+            </label>
+
+            <label>Human : 
+                <input type="checkbox" name="human" value={inputs.human} onChange={handleChange} />
             </label>
 
             <p>Current values : {inputs.fname} {inputs.lname}</p>
