@@ -1,0 +1,13 @@
+
+
+.mybtn{
+    color: gray;
+    background-color: aqua;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.mybtn:hover{
+    color: gray;
+    background-color: pink;
+}
