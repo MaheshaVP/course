@@ -5,6 +5,8 @@ import Props from './props';
 import Destructure from './Destructure';
 import Events from './Events';
 import Goal from './Goal';
+import Mycars from './Mycars';
+import Form from './Form';
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
       <Events />
       <hr />
       <Goal Goal={true}/>
+      <Mycars /><hr />
+      <Form />
+
     </div>
   );
 }
