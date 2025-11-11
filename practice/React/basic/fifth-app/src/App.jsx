@@ -2,6 +2,8 @@ import { useState } from "react";
 import Firsthook from "./Firsthook";
 import Secondhook from "./Secondhook";
 import Time from "./Time";
+import Thirdhook from "./Thirdhook";
+import Fourthhook from "./Fourthhook";
 
 
 function App(){
@@ -23,6 +25,15 @@ function App(){
 
       <p>useEffect hook</p>
       <Secondhook />
+      <hr />
+
+      <p>useContext hook</p>
+      <Thirdhook />
+      <hr />
+
+      <p>useRef hook</p>
+      <Fourthhook />
+      <hr />
 
     </div>
   )
