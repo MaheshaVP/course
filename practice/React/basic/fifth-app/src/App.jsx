@@ -4,6 +4,10 @@ import Secondhook from "./Secondhook";
 import Time from "./Time";
 import Thirdhook from "./Thirdhook";
 import Fourthhook from "./Fourthhook";
+import Fifthhook from "./Fifthhook";
+import Todo from "./Todo";
+import Conditional from "./Conditional";
+import FetchUsers from "./Fetchusers";
 
 
 function App(){
@@ -11,6 +15,12 @@ function App(){
 
   return(
     <div>
+      <FetchUsers />
+      <hr />
+
+      <Conditional />
+      <hr />
+
       <Time />
       <hr/>
       <h1>React</h1>
@@ -34,6 +44,12 @@ function App(){
       <p>useRef hook</p>
       <Fourthhook />
       <hr />
+
+      <p>useCallback hook</p>
+      <Fifthhook />
+      <hr />
+
+      <Todo />
 
     </div>
   )
