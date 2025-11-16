@@ -55,14 +55,17 @@ import About from "./About";
 import Dashboard from "./Dashboard";
 import Home from "./Home";
 import Pagenotfound from "./Pagenotfound";
-import Hoc from './Hoc';
+import Simple from "./Simple";
 
-function App(props) {
-    
+function App() {
 
     return(
         <div>
-            <h1>Welcome to page !! {props.name}</h1>
+            <h1>Welcome to page </h1>
+            <Simple />
+            <br />
+            <br />
+
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />
@@ -75,4 +78,4 @@ function App(props) {
     )
 }
 
-export default Hoc(App);
+export default App;
