@@ -1,48 +1,78 @@
 
-import React, { useState } from 'react'
-import './App.css'
-import Test from './Test';
+// import React, { useState } from 'react';
+// import './App.css';
+// import Test from './Test';
 
-//functional component
-//state and props 
-//Event handler
-const App = () => {
-  const[data, setData] = useState({
-    name: 'mahesh',
-    age: 24
-  })
+// //functional component
+// //state and props 
+// //Event handler
+// const App = () => {
+//   const[data, setData] = useState({
+//     name: 'mahesh',
+//     age: 24
+//   })
 
-  const {name, age} = data;
+//   const {name, age} = data;
 
-  const[name1, setName1] = useState('');
+//   const[name1, setName1] = useState('');
 
-  return (
-    <div>
+//   return (
+//     <div>
 
-        {/* <Test name={name} age={age}/> */}
-        <h5>Name : {name1}</h5><br />
-        <input type="text" name='name' onChange={(e)=>setName1(e.target.value)} /><br />
-        <button onClick={() => alert(`Hello ${name1}`)}>Click me</button>
+//         {/* <Test name={name} age={age}/> */}
+//         <h5>Name : {name1}</h5><br />
+//         <input type="text" name='name' onChange={(e)=>setName1(e.target.value)} /><br />
+//         <button onClick={() => alert(`Hello ${name1}`)}>Click me</button>
 
-        <br />
-          <Test name={name} age ={age}/>
+//         <br />
+//           <Test name={name} age ={age}/>
 
-    </div>
-  )
-}
-
-
-//class component
-// class App extends React.Component {
-//   render() {
-//     let name = 'Mahesh';
-    
-//     return (
-//       <div>
-//         <h1>My name is {name}</h1>
-//       </div>
-//     )
-//   }
+//     </div>
+//   )
 // }
 
-export default App
+
+// //class component
+// // class App extends React.Component {
+// //   render() {
+// //     let name = 'Mahesh';
+    
+// //     return (
+// //       <div>
+// //         <h1>My name is {name}</h1>
+// //       </div>
+// //     )
+// //   }
+// // }
+
+// export default App
+
+
+//Router
+import React from "react"; 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./About";
+import Dashboard from "./Dashboard";
+import Home from "./Home";
+import Pagenotfound from "./Pagenotfound";
+import Hoc from './Hoc';
+
+function App(props) {
+    
+
+    return(
+        <div>
+            <h1>Welcome to page !! {props.name}</h1>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/dashboard" element={<Dashboard />}/>
+                    <Route path="/about" element={<About />}/>
+                    <Route path="*" element={<Pagenotfound />}/>
+                </Routes>
+            </BrowserRouter>
+        </div>
+    )
+}
+
+export default Hoc(App);
