@@ -42,4 +42,57 @@ print(x)
 print(type(x))
 
 
+#dictionaries
+thisdict = {
+    "brand" : "mustag",
+    "model" : "ford",
+    "year" : 1986 ,
+    "color" : ["red","cream"]
+}
+print(thisdict)
 
+print(len(thisdict))
+print(type(thisdict))
+
+#Access
+print(thisdict["model"])
+print(thisdict.get("color")[0])
+
+print(thisdict.keys())
+print(thisdict.values())
+
+thisdict["color"] = "Pink"
+print(thisdict)
+
+if "color" in thisdict:
+    print("Yes , present")
+
+thisdict["rank"] = "second"
+print(thisdict)
+
+thisdict.update({"rounds":22})
+print(thisdict)
+
+#remove
+print(thisdict.pop("rounds"))
+print(thisdict)
+
+# print(thisdict.clear())
+
+#loop
+for x,y in thisdict.items():
+    print(x,y)
+
+#nested
+myfamily = {
+    "child1" : {
+        "name" : "john",
+        "year" : 2003
+    },
+    "child2" : {
+        "name" : "kemo",
+        "year" : 2004
+    }
+}
+
+print(myfamily["child1"]["name"])
