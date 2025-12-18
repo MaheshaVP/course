@@ -66,3 +66,29 @@ class Person:
 p1 = Person("Chaithra")
 p1.welcome()
 
+
+#modify 
+class Person:
+    def __init__(self,name):
+        self.name = name
+    
+p2 = Person("cars")
+p2.age = 25
+p2.city = "Bangalore"
+print(f"{p2.name},{p2.age},{p2.city}")
+
+p1.age = 28
+print(p1.age)
+
+#methods
+class Calculator:
+    def add(self,a,b):
+        return a+b
+    
+    def mul(self,a,b):
+        return a*b
+    
+calc = Calculator()
+print(calc.add(5,6))
+print(calc.mul(6,8))
+
